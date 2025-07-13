@@ -1,0 +1,5 @@
+    .header-container .social-item {
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+-      border: 1.5px solid var(--main-brown);
++      border: none;
+    }
