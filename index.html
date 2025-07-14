@@ -1106,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <option>Другие работы</option>
               </select>
             </div>
-            <input type="hidden" name="_next" value="/index.html">
+            <input type="hidden" name="_next" value="https://excavator-lida.netlify.app/">
             <input type="hidden" name="_subject" value="Новая заявка с сайта Excavator-Lida.by">
             <input type="hidden" name="_captcha" value="false">
           </div>
@@ -1592,4 +1592,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- === JS для показа алерта после возврата с формы === -->
+<script>
+  // Проверяем наличие ?success=1 или ?formsubmit в URL
+  if (window.location.search.includes('success=1') || window.location.search.includes('formsubmit')) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success text-center fw-bold position-fixed top-0 start-50 translate-middle-x mt-3 shadow-lg';
+    alert.style.zIndex = 2000;
+    alert.style.maxWidth = '420px';
+    alert.innerHTML = 'Спасибо! Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.';
+    document.body.appendChild(alert);
+    setTimeout(() => { alert.remove(); }, 7000);
+  }
+</script>
 </body>
