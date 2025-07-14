@@ -36,14 +36,14 @@
   <!-- Custom CSS -->
   <style>
     :root {
-      --main-yellow: #FFD600;
-      --main-orange: #FFB300;
-      --main-blue: #1a237e;
-      --main-blue-light: #3949ab;
-      --main-brown: #7C4700;
-      --main-brown-dark: #5a3200;
+      --main-yellow: #FFE082;
+      --main-orange: #FFB74D;
+      --main-blue: #b3b9c9;
+      --main-blue-light: #dbe3ea;
+      --main-brown: #8D6748;
+      --main-brown-dark: #5a4636;
       --main-yellow-light: #FFF8E1;
-      --main-brown-light: #a86c1d;
+      --main-brown-light: #c9a47a;
     }
     body {
       font-family: 'Inter', sans-serif;
@@ -430,8 +430,8 @@
       box-shadow: 0 0 0 0.2rem #ffd60044;
     }
     .footer-section {
-      background: linear-gradient(90deg, #fffbe6 60%, #ffd600 100%);
-      color: var(--main-blue);
+      background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+      color: var(--main-brown-dark);
       border-top: 4px solid var(--main-yellow);
       margin-top: 3rem;
       padding-top: 2.5rem;
@@ -462,7 +462,7 @@
       color: #fff;
     }
     .footer-title {
-      color: var(--main-blue);
+      color: var(--main-brown-dark);
       font-weight: 700;
       margin-bottom: 1rem;
     }
@@ -606,8 +606,8 @@
       width: 100%;
       height: 2px;
       border: none;
-      background: linear-gradient(90deg, transparent 0%, #3949ab 30%, #1a237e 50%, #3949ab 70%, transparent 100%);
-      box-shadow: 0 0 8px 0 #1a237e33;
+      background: linear-gradient(90deg, transparent 0%, #dbe3ea 30%, #b3b9c9 50%, #dbe3ea 70%, transparent 100%);
+      box-shadow: 0 0 8px 0 #b3b9c933;
       border-radius: 1px;
       margin: 40px 0 40px 0;
       opacity: 0.7;
@@ -615,12 +615,12 @@
     }
     .section-divider-glow:hover {
       opacity: 1;
-      box-shadow: 0 0 16px 2px #3949ab55;
+      box-shadow: 0 0 16px 2px #dbe3ea55;
     }
     /* Удаляю коричневые разделители и бордеры */
     .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
       border: none !important;
-      box-shadow: 0 4px 32px 0 #1a237e22, 0 2px 12px #ffd60022;
+      box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
     }
     @media (max-width: 767px) {
       .section-divider-glow { margin: 20px 0 20px 0; height: 1.5px; }
@@ -635,7 +635,7 @@
     }
     .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
       border: none !important;
-      box-shadow: 0 4px 32px 0 #1a237e22, 0 2px 12px #ffd60022;
+      box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
     }
     .section-divider-glow {
       border: none !important;
@@ -733,79 +733,6 @@
     @media (max-width: 767px) {
       .reviews-carousel-flex { max-width: 98vw; }
       .reviews-carousel-flex .carousel-inner { min-height: 210px; }
-    }
-  </style>
-  <style>
-    /* --- Адаптивная шапка и соцсети --- */
-    @media (max-width: 767px) {
-      .header-container.stylish-header {
-        padding: 0.4rem 0.2rem !important;
-        border-radius: 0 0 1.2rem 1.2rem;
-        min-height: unset;
-      }
-      .stylish-header-inner {
-        flex-direction: column;
-        align-items: stretch;
-        min-height: unset;
-        gap: 0.5rem !important;
-      }
-      .logo-img {
-        height: 44px !important;
-        max-width: 60px !important;
-        margin: 0 auto 0.2rem auto;
-        padding: 0.1rem 0.5rem;
-        border-radius: 0.7rem;
-      }
-      .header-container .btn-outline-warning {
-        font-size: 0.98rem;
-        padding: 0.4rem 0.9rem;
-        margin: 0 0.2rem 0.2rem 0;
-      }
-      .header-container .btn-orange {
-        font-size: 1rem;
-        padding: 0.5rem 1.2rem;
-        margin: 0.2rem 0 0.2rem 0;
-      }
-      .header-container .d-none.d-md-block {
-        display: none !important;
-      }
-      .header-container .d-flex.align-items-center.gap-3 {
-        justify-content: center;
-        gap: 0.3rem !important;
-        margin-bottom: 0.2rem;
-      }
-      .header-container .social-item {
-        width: 36px !important;
-        height: 36px !important;
-        font-size: 1.2rem !important;
-        border-radius: 50% !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 !important;
-        margin: 0 0.1rem;
-        box-shadow: 0 1px 4px #ffd60033;
-        border: 1.5px solid #1a237e;
-        background: #fffbe6;
-      }
-      .header-container .social-item.instagram {
-        background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%) !important;
-        color: #fff !important;
-        border: none;
-      }
-      .header-container .social-item.viber {
-        color: #7360f2 !important;
-        border-color: #7360f2 !important;
-      }
-      .header-container .social-item.telegram {
-        color: #229ed9 !important;
-        border-color: #229ed9 !important;
-      }
-      .header-container .social-item:active,
-      .header-container .social-item:focus {
-        outline: none;
-        box-shadow: 0 0 0 2px #ffd60055;
-      }
     }
   </style>
 </head>
@@ -1189,7 +1116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="section-divider-glow"></div>
 
 <!-- === ФУТЕР === -->
-<footer class="footer-section mt-5 pt-5 pb-3" style="background: linear-gradient(90deg, #fffbe6 60%, #ffd600 100%); border-top: 4px solid var(--main-yellow);">
+<footer class="footer-section mt-5 pt-5 pb-3" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4 col-md-6">
@@ -1238,14 +1165,14 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <style>
   :root {
-    --main-yellow: #FFD600;
-    --main-orange: #FFB300;
-    --main-blue: #1a237e;
-    --main-blue-light: #3949ab;
-    --main-brown: #7C4700;
-    --main-brown-dark: #5a3200;
+    --main-yellow: #FFE082;
+    --main-orange: #FFB74D;
+    --main-blue: #b3b9c9;
+    --main-blue-light: #dbe3ea;
+    --main-brown: #8D6748;
+    --main-brown-dark: #5a4636;
     --main-yellow-light: #FFF8E1;
-    --main-brown-light: #a86c1d;
+    --main-brown-light: #c9a47a;
   }
   /* === HERO С НОВЫМ ГРАДИЕНТОМ === */
   .hero-section {
@@ -1282,17 +1209,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   /* === СЕКЦИИ С ГРАДИЕНТАМИ И СИНИМ АКЦЕНТОМ === */
   .discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section {
-    background: linear-gradient(120deg, #fffbe6 60%, #e3e7fd 100%);
+    background: linear-gradient(120deg, #fffbe6 60%, #f5e6d6 100%);
   }
   .section-title {
-    color: var(--main-blue);
-    text-shadow: 0 2px 12px #1a237e22, 0 1px 0 #fff8;
+    color: var(--main-brown-dark);
+    text-shadow: 0 2px 12px #c9a47a22, 0 1px 0 #fff8;
     font-weight: 900;
     letter-spacing: 1.5px;
     position: relative;
     display: inline-block;
     padding-bottom: 0.3em;
-    filter: drop-shadow(0 2px 8px #1a237e33);
+    filter: drop-shadow(0 2px 8px #c9a47a33);
   }
   .section-title:after {
     content: '';
@@ -1301,12 +1228,12 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 60px;
     height: 4px;
     border-radius: 2px;
-    background: linear-gradient(90deg, var(--main-blue) 0%, var(--main-yellow) 100%);
+    background: linear-gradient(90deg, var(--main-brown) 0%, var(--main-yellow) 100%);
     opacity: 0.8;
   }
   .section-subtitle {
     font-size: 1.15rem;
-    color: var(--main-blue-light);
+    color: var(--main-brown);
     opacity: 0.85;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -1314,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /* === КАРТОЧКИ С ГРАДИЕНТНОЙ РАМКОЙ И СВЕЧЕНИЕМ === */
   .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
     border-radius: 1.5rem;
-    box-shadow: 0 4px 32px 0 #1a237e22, 0 2px 12px #ffd60022;
+    box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
     background: #fffbe6;
     border: 2.5px solid transparent;
     background-clip: padding-box;
@@ -1327,45 +1254,45 @@ document.addEventListener('DOMContentLoaded', function() {
     z-index: 0;
     top: -2px; left: -2px; right: -2px; bottom: -2px;
     border-radius: 1.7rem;
-    background: linear-gradient(120deg, var(--main-blue) 0%, var(--main-yellow) 100%);
-    opacity: 0.13;
+    background: linear-gradient(120deg, var(--main-brown) 0%, var(--main-yellow) 100%);
+    opacity: 0.10;
     pointer-events: none;
   }
   .price-card:hover, .advantage-card:hover, .service-card:hover, .step-card:hover {
-    box-shadow: 0 12px 48px 0 #1a237e44, 0 2px 16px #ffd60055;
+    box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
     border-color: var(--main-blue-light);
     transform: translateY(-8px) scale(1.04);
     filter: brightness(1.04) saturate(1.1);
   }
   /* === КНОПКИ С СИНИМ ГРАДИЕНТОМ === */
   .btn-gradient, .btn.btn-gradient {
-    background: linear-gradient(90deg, var(--main-blue) 60%, var(--main-yellow) 100%);
+    background: linear-gradient(90deg, var(--main-brown) 60%, var(--main-yellow) 100%);
     color: #fff;
     border: none;
     font-weight: 800;
     border-radius: 2rem;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s, filter 0.2s;
-    box-shadow: 0 2px 12px #1a237e33;
+    box-shadow: 0 2px 12px #c9a47a33;
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
   .btn-gradient:hover, .btn.btn-gradient:hover {
-    background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-blue) 90%);
+    background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-brown) 90%);
     color: #fff;
-    filter: brightness(1.1) drop-shadow(0 0 12px #ffd600cc);
-    box-shadow: 0 4px 16px #ffd60055, 0 8px 32px #1a237e55;
+    filter: brightness(1.07) drop-shadow(0 0 8px #ffe082cc);
+    box-shadow: 0 4px 16px #ffe08255, 0 8px 32px #c9a47a55;
     transform: translateY(-2px) scale(1.04);
   }
   .btn-gradient:active, .btn.btn-gradient:active {
     transform: scale(0.96);
-    box-shadow: 0 1px 4px #ffd60055;
+    box-shadow: 0 1px 4px #ffe08255;
   }
   /* === СОЦСЕТИ: фирменные цвета и без подчеркивания === */
   .social-item, .footer-social .social-link {
     background: #fffbe6;
     border-radius: 50%;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
-    box-shadow: 0 2px 8px #1a237e22;
+    box-shadow: 0 2px 8px #c9a47a22;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -1382,14 +1309,14 @@ document.addEventListener('DOMContentLoaded', function() {
   .social-item:hover, .footer-social .social-link:hover {
     background: var(--main-blue-light);
     color: #fff;
-    box-shadow: 0 4px 16px #ffd60055;
+    box-shadow: 0 4px 16px #ffe08255;
     transform: scale(1.08);
     text-decoration: none !important;
   }
   /* === ФУТЕР: плавный градиент от синего к жёлтому === */
   .footer-section {
-    background: linear-gradient(90deg, #fffbe6 60%, #ffd600 100%);
-    color: var(--main-blue);
+    background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+    color: var(--main-brown-dark);
     border-top: 4px solid var(--main-yellow);
     margin-top: 3rem;
     padding-top: 2.5rem;
@@ -1397,10 +1324,10 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
   }
   .footer-title, .footer-link, .footer-description, .footer-contacts, .footer-bottom {
-    color: var(--main-blue) !important;
-    text-shadow: 0 2px 8px #ffd60033, 0 1px 0 #fff8;
+    color: var(--main-brown-dark) !important;
+    text-shadow: 0 2px 8px #ffe08233, 0 1px 0 #fff8;
   }
-  .footer-link:hover { color: var(--main-yellow) !important; }
+  .footer-link:hover { color: var(--main-orange) !important; }
   /* === Разделители-волны: синий-жёлтый градиент === */
   .section-divider svg path {
     fill: url(#footerWaveGrad);
@@ -1425,7 +1352,7 @@ document.addEventListener('DOMContentLoaded', function() {
     text-decoration: none !important;
     border: none;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
-    box-shadow: 0 2px 8px #1a237e22;
+    box-shadow: 0 2px 8px #c9a47a22;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -1433,7 +1360,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   .footer-social .social-link:hover {
     filter: brightness(0.85);
-    box-shadow: 0 4px 16px #ffd60055;
+    box-shadow: 0 4px 16px #ffe08255;
     transform: scale(1.08);
   }
   /* --- Мобильная адаптация --- */
@@ -1460,8 +1387,8 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 100%;
     height: 2px;
     border: none;
-    background: linear-gradient(90deg, transparent 0%, #3949ab 30%, #1a237e 50%, #3949ab 70%, transparent 100%);
-    box-shadow: 0 0 8px 0 #1a237e33;
+    background: linear-gradient(90deg, transparent 0%, #dbe3ea 30%, #b3b9c9 50%, #dbe3ea 70%, transparent 100%);
+    box-shadow: 0 0 8px 0 #b3b9c933;
     border-radius: 1px;
     margin: 40px 0 40px 0;
     opacity: 0.7;
@@ -1469,21 +1396,21 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   .section-divider-glow:hover {
     opacity: 1;
-    box-shadow: 0 0 16px 2px #3949ab55;
+    box-shadow: 0 0 16px 2px #dbe3ea55;
   }
   /* Удаляю коричневые разделители и бордеры */
   .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
     border: none !important;
-    box-shadow: 0 4px 32px 0 #1a237e22, 0 2px 12px #ffd60022;
+    box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
   }
   @media (max-width: 767px) {
     .section-divider-glow { margin: 20px 0 20px 0; height: 1.5px; }
   }
   .stylish-header {
-    background: linear-gradient(90deg, rgba(255,255,255,0.97) 60%, rgba(26,35,126,0.10) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.97) 60%, rgba(205, 183, 151, 0.10) 100%);
     backdrop-filter: blur(18px);
-    box-shadow: 0 8px 32px 0 rgba(26,35,126,0.18), 0 2px 16px 0 #ffd60033, 0 1.5px 8px 0 #fffbe6;
-    border-bottom: 4px solid #1a237e;
+    box-shadow: 0 8px 32px 0 rgba(205,183,151,0.18), 0 2px 16px 0 #ffe08233, 0 1.5px 8px 0 #fffbe6;
+    border-bottom: 4px solid #c9a47a;
     border-radius: 0;
     padding: 1.2rem 2.2rem !important;
     margin-top: 0;
@@ -1502,7 +1429,7 @@ document.addEventListener('DOMContentLoaded', function() {
     border-radius: 1.2rem;
     background: #fffbe6;
     padding: 0.3rem 1.2rem;
-    box-shadow: 0 2px 16px #ffd60033, 0 0 0 6px #1a237e22;
+    box-shadow: 0 2px 16px #ffe08233, 0 0 0 6px #c9a47a22;
     height: 100px !important;
     max-width: 140px !important;
   }
@@ -1515,34 +1442,34 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 1.25rem;
     background: rgba(255,255,255,0.8);
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px #ffd60033, 0 0 0 3px #1a237e22;
+    box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
     padding: 0.7rem 2.2rem;
   }
   .stylish-header .btn-outline-warning:hover {
     background: var(--main-yellow);
     color: var(--main-blue);
-    box-shadow: 0 4px 16px #ffd60055, 0 0 0 6px #1a237e33;
+    box-shadow: 0 4px 16px #ffe08255, 0 0 0 6px #c9a47a33;
   }
   .stylish-header .social-item {
     font-size: 2.2rem !important;
     width: 54px !important;
     height: 54px !important;
-    box-shadow: 0 2px 12px #1a237e33, 0 0 0 4px #fffbe6;
-    border: 2.5px solid #1a237e;
+    box-shadow: 0 2px 12px #c9a47a33, 0 0 0 4px #fffbe6;
+    border: 2.5px solid #c9a47a;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
     background: #fffbe6;
-    color: #1a237e;
+    color: #c9a47a;
     transition: box-shadow 0.2s, border 0.2s, color 0.2s, background 0.2s, transform 0.15s;
   }
   .stylish-header .social-item.viber { color: #7360f2; border-color: #7360f2; }
   .stylish-header .social-item.telegram { color: #229ed9; border-color: #229ed9; }
   .stylish-header .social-item.instagram { color: #e1306c; border-color: #e1306c; }
   .stylish-header .social-item:hover {
-    background: var(--main-blue);
+    background: var(--main-orange);
     color: #fff;
     border-color: var(--main-yellow);
-    box-shadow: 0 4px 24px #ffd60099, 0 0 0 8px #1a237e33;
+    box-shadow: 0 4px 24px #ffe08299, 0 0 0 8px #c9a47a33;
     transform: scale(1.13);
   }
   .stylish-header .btn-orange {
@@ -1550,7 +1477,7 @@ document.addEventListener('DOMContentLoaded', function() {
     padding: 0.7rem 2.2rem;
     border-radius: 2rem;
     font-weight: 700;
-    box-shadow: 0 2px 8px #ffd60033, 0 0 0 3px #1a237e22;
+    box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
     margin-left: 0.5rem;
   }
   @media (max-width: 991px) {
