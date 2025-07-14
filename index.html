@@ -735,6 +735,40 @@
       .reviews-carousel-flex .carousel-inner { min-height: 210px; }
     }
   </style>
+  <style>
+.review-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
+  transition: box-shadow 0.2s, transform 0.15s;
+  position: relative;
+}
+.review-card:hover {
+  box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
+  transform: translateY(-6px) scale(1.03);
+}
+.initials-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 2px 12px #ffd60055;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.review-text {
+  font-size: 1.08rem;
+  color: var(--main-brown-dark);
+  margin-top: 0.5rem;
+}
+  </style>
 </head>
 
 <body style="background: var(--main-yellow-light);">
@@ -1027,57 +1061,55 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 <div class="section-divider-glow"></div>
 
-<!-- === ОТЗЫВЫ КЛИЕНТОВ === -->
+<!-- === ОТЗЫВЫ КЛИЕНТОВ (НОВЫЙ ДИЗАЙН) === -->
 <section class="reviews-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #e3e7fd 100%);">
   <div class="container">
     <h2 class="section-title text-center mb-5">Отзывы клиентов</h2>
-    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active text-center">
-          <blockquote class="blockquote">Нужно было срочно выкопать котлован под бассейн. Приехали в тот же день, всё сделали быстро, даже не ожидала! Спасибо за оперативность.</blockquote>
-          <div class="fw-bold">Вера, Лида</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Думал, что не получится выкопать траншею возле старого забора, но ребята нашли решение и всё сделали аккуратно. Очень доволен результатом!</blockquote>
-          <div class="fw-bold">Андрей, Берёзовка</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Спасибо за помощь с планировкой участка! Всё рассчитали, объяснили, сделали ровно как просила. Теперь участок ровный, как стол.</blockquote>
-          <div class="fw-bold">Ирина, Лида</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Заказал выемку грунта под фундамент. Всё сделали за один день, хотя думал, что уйдёт два. Сэкономили мне кучу времени!</blockquote>
-          <div class="fw-bold">Сергей, Щучин</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Очень порадовало, что можно заказать экскаватор ночью. Приехали к 23:00, всё сделали, никто не подвёл. Рекомендую!</blockquote>
-          <div class="fw-bold">Ольга, Новогрудок</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Во время работы пошёл сильный дождь, думал всё отменится. Но после дождя водитель вернулся и продолжил, время не потеряли. Очень выручили!</blockquote>
-          <div class="fw-bold">Владимир, Лида</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Спасибо за помощь с вывозом старого грунта! Всё быстро, без лишних вопросов, цена как договаривались.</blockquote>
-          <div class="fw-bold">Роман, Дятлово</div>
-        </div>
-        <div class="carousel-item text-center">
-          <blockquote class="blockquote">Очень понравилось, что всё можно обсудить по телефону, а потом просто приехать и принять готовую работу. Всё чётко и по делу!</blockquote>
-          <div class="fw-bold">Елена, Лида</div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
+          <div class="initials-avatar mb-3">ВЛ</div>
+          <div class="fw-bold mb-1">Вера, Лида</div>
+          <div class="text-secondary small mb-2">Уборка снега</div>
+          <div class="review-text">Очень понравилось, что приехали быстро и аккуратно убрали снег. Оператор вежливый, техника современная. Буду обращаться ещё!</div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="col-md-6 col-lg-4">
+        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="initials-avatar mb-3">АБ</div>
+          <div class="fw-bold mb-1">Андрей, Берёзовка</div>
+          <div class="text-secondary small mb-2">Планировка участка</div>
+          <div class="review-text">Работа выполнена качественно и в срок. Всё объяснили, помогли с выбором услуги. Спасибо за профессионализм!</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="initials-avatar mb-3">ИС</div>
+          <div class="fw-bold mb-1">Ирина, Лида</div>
+          <div class="text-secondary small mb-2">Погрузка песка</div>
+          <div class="review-text">Очень удобно, что можно заказать технику даже вечером. Всё сделали быстро, цена приятная. Рекомендую друзьям!</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="initials-avatar mb-3">СЩ</div>
+          <div class="fw-bold mb-1">Сергей, Щучин</div>
+          <div class="text-secondary small mb-2">Земельные работы</div>
+          <div class="review-text">Экскаватор приехал вовремя, водитель опытный. Всё сделали за один день, участок остался чистым. Спасибо за работу!</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-4s">
+          <div class="initials-avatar mb-3">ЕН</div>
+          <div class="fw-bold mb-1">Елена, Лида</div>
+          <div class="text-secondary small mb-2">Вывоз грунта</div>
+          <div class="review-text">Все вопросы решили по телефону, работа выполнена чётко и без задержек. Очень довольна сервисом!</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<div class="section-divider"></div>
+<div class="section-divider-glow"></div>
 
 <!-- === ФОРМА ЗАКАЗА (МОДАЛЬНОЕ ОКНО) === -->
 <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
@@ -1118,6 +1150,16 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </div>
+
+
+<!-- === КНОПКА "СВЯЗАТЬСЯ С НАМИ" ПЕРЕД ПОДВАЛОМ === -->
+<div class="text-center my-5">
+  <button class="btn btn-gradient btn-lg rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Остались вопросы? Напишите нам!
+  </button>
+</div>
+<div class="section-divider-glow"></div>
+
 
 <!-- === ФУТЕР === -->
 <footer class="footer-section mt-5 pt-5 pb-3" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
@@ -1491,6 +1533,22 @@ document.addEventListener('DOMContentLoaded', function() {
     .stylish-header .social-item { font-size: 1.3rem !important; width: 36px !important; height: 36px !important; }
     .stylish-header .btn-outline-warning, .stylish-header .btn-orange { font-size: 1rem; padding: 0.5rem 1.2rem; }
   }
+  @media (max-width: 767px) {
+    .header-container .logo-img {
+      display: none !important;
+    }
+    .header-container .social-item {
+      width: 36px !important;
+      height: 36px !important;
+      font-size: 1.3rem !important;
+      padding: 0 !important;
+    }
+    .header-container .d-flex.align-items-center.gap-3 {
+      gap: 0.5rem !important;
+      justify-content: center !important;
+      width: 100%;
+    }
+  }
 </style>
 <!-- SVG-градиент для разделителей -->
 <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="footerWaveGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a237e"/><stop offset="100%" stop-color="#FFD600"/></linearGradient></defs></svg>
@@ -1606,4 +1664,34 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => { alert.remove(); }, 7000);
   }
 </script>
+
+
+
+<!-- === МОДАЛЬНОЕ ОКНО "СВЯЗАТЬСЯ С НАМИ" === -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content order-form p-3 p-md-4 rounded-4">
+      <form id="contact-form-modal" autocomplete="on">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title w-100 text-center fw-bold section-title" id="contactModalLabel">Связаться с нами</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body pt-2">
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-lg" rows="3" placeholder="Ваш вопрос или комментарий" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-3 justify-content-center">
+          <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 </body>
