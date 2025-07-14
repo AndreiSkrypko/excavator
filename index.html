@@ -746,7 +746,7 @@
   <div class="container position-relative z-2" style="z-index:2;">
     <h1 class="display-2 fw-bold text-white mb-4 hero-title animate__animated animate__fadeInDown">Аренда экскаватора в Лиде и районе</h1>
     <p class="lead text-white-50 mb-5 animate__animated animate__fadeInUp animate__delay-1s">Профессиональные услуги спецтехники для любых задач. Быстро, аккуратно, выгодно!</p>
-    <a href="#contact-form" class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s">
+    <a href="#" class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s" data-bs-toggle="modal" data-bs-target="#orderModal">
       <i class="bi bi-chat-dots-fill me-2"></i> Заказать услугу
     </a>
   </div>
@@ -768,7 +768,7 @@
       <a href="https://t.me/sashaamkador" target="_blank" class="social-item telegram d-flex align-items-center justify-content-center rounded-circle" title="Telegram" style="width: 38px; height: 38px;"><i class="fab fa-telegram"></i></a>
       <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank" class="social-item instagram d-flex align-items-center justify-content-center rounded-circle" title="Instagram" style="width: 38px; height: 38px;"><i class="fab fa-instagram"></i></a>
     </div>
-    <a href="#contact-form" class="btn btn-orange d-md-none ms-2">Заказать</a>
+    <a href="#" class="btn btn-orange d-md-none ms-2" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</a>
   </div>
 </header>
 
@@ -810,7 +810,7 @@
               <li class="mb-1"><i class="bi bi-cash-coin text-warning me-2"></i>Все расходы включены</li>
               <li class="mb-1"><i class="bi bi-moon-stars text-warning me-2"></i>Работаем 24/7</li>
             </ul>
-            <a href="#contact-form" class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2"><i class="bi bi-telephone-fill me-2"></i>Заказать сейчас</a>
+            <a href="#" class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-telephone-fill me-2"></i>Заказать сейчас</a>
           </div>
           <!-- Правая часть: калькулятор -->
           <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center ps-md-4">
@@ -953,7 +953,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="service-content p-3">
             <h3 class="service-name fw-bold mb-3">Уборка снега</h3>
-            <a href="https://formsubmit.co/el/mimife" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
           </div>
         </div>
       </div>
@@ -964,7 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="service-content p-3">
             <h3 class="service-name fw-bold mb-3">Планировка участка</h3>
-            <a href="https://formsubmit.co/el/mimife" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
           </div>
         </div>
       </div>
@@ -975,7 +975,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="service-content p-3">
             <h3 class="service-name fw-bold mb-3">Погрузка/выгрузка песка и гравия</h3>
-            <a href="https://formsubmit.co/el/mimife" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
           </div>
         </div>
       </div>
@@ -986,7 +986,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="service-content p-3">
             <h3 class="service-name fw-bold mb-3">Земельные работы</h3>
-            <a href="https://formsubmit.co/el/mimife" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
           </div>
         </div>
       </div>
@@ -1079,13 +1079,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 <div class="section-divider"></div>
 
-<!-- === ФОРМА ЗАКАЗА === -->
-<section class="order-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
-        <form class="order-form p-4 p-md-5 mx-auto rounded-4 shadow-lg animate__animated animate__fadeInUp" id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-          <h4 class="mb-4 text-center fw-bold section-title">Заказать услугу</h4>
+<!-- === ФОРМА ЗАКАЗА (МОДАЛЬНОЕ ОКНО) === -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content order-form p-3 p-md-4 rounded-4">
+      <form action="https://formsubmit.co/excavatorlida@gmail.com" method="POST" autocomplete="on">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title w-100 text-center fw-bold section-title" id="orderModalLabel">Заказать услугу</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body pt-2">
           <div class="row g-3">
             <div class="col-md-6">
               <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" name="name" required>
@@ -1103,16 +1106,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <option>Другие работы</option>
               </select>
             </div>
-            <div class="col-12 text-center mt-3">
-              <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить заявку</button>
-            </div>
+            <input type="hidden" name="_next" value="/index.html">
+            <input type="hidden" name="_subject" value="Новая заявка с сайта Excavator-Lida.by">
+            <input type="hidden" name="_captcha" value="false">
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="modal-footer border-0 pt-3 justify-content-center">
+          <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить заявку</button>
+        </div>
+      </form>
     </div>
   </div>
-</section>
-<div class="section-divider-glow"></div>
+</div>
 
 <!-- === ФУТЕР === -->
 <footer class="footer-section mt-5 pt-5 pb-3" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
