@@ -439,8 +439,12 @@
       box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
     }
     .footer-logo {
-      height: 60px;
+      height: 100px;
+      max-width: 180px;
       margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .footer-description {
       color: var(--main-brown-dark);
@@ -552,6 +556,9 @@
       .price-card {
         padding: 1.2rem 1rem;
       }
+    }
+    @media (max-width: 991px) {
+      .footer-logo { height: 60px !important; max-width: 110px !important; }
     }
   </style>
   <!-- === КРУТЫЕ СТИЛИ ДЛЯ СОЦСЕТЕЙ И РАЗДЕЛИТЕЛЕЙ === -->
@@ -1197,7 +1204,8 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="footer-bottom border-top mt-4 pt-3 text-center text-secondary small">
-      © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span>
+      © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span><br>
+      <span>УНП 591388079</span>
     </div>
   </div>
 </footer>
