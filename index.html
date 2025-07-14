@@ -647,6 +647,94 @@
       box-shadow: none !important;
     }
   </style>
+  <style>
+    .initials-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
+      color: #fff;
+      font-weight: 800;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 2px 12px #ffd60055;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 214, 0, 0.15);
+      border-radius: 50%;
+      box-shadow: none;
+      opacity: 0.85;
+      z-index: 2;
+      transition: background 0.2s, opacity 0.2s;
+    }
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+      background: rgba(255, 179, 0, 0.25);
+      opacity: 1;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-size: 60% 60%;
+      width: 1.5rem;
+      height: 1.5rem;
+      filter: drop-shadow(0 2px 8px #ffd60055);
+    }
+    .carousel-inner .carousel-item {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  </style>
+  <style>
+    .reviews-carousel-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .reviews-carousel-flex .carousel-inner {
+      min-height: 180px;
+      width: 100%;
+      overflow: visible;
+      /* убираю display: flex */
+    }
+    .reviews-carousel-flex .carousel-item {
+      margin: 0;
+      width: 100%;
+      overflow: visible;
+      /* убираю display: flex */
+      word-break: break-word;
+      white-space: normal;
+    }
+    .reviews-carousel-flex .carousel-item .blockquote {
+      word-break: break-word;
+      white-space: normal;
+    }
+    .reviews-carousel-flex .carousel-control-prev,
+    .reviews-carousel-flex .carousel-control-next {
+      position: static;
+      margin: 0 0.5rem;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .reviews-carousel-flex .carousel-control-prev-icon,
+    .reviews-carousel-flex .carousel-control-next-icon {
+      margin: 0;
+    }
+    @media (max-width: 767px) {
+      .reviews-carousel-flex { max-width: 98vw; }
+      .reviews-carousel-flex .carousel-inner { min-height: 210px; }
+    }
+  </style>
 </head>
 
 <body style="background: var(--main-yellow-light);">
@@ -955,39 +1043,36 @@ document.addEventListener('DOMContentLoaded', function() {
     <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active text-center">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Быстро приехали, всё сделали аккуратно. Спасибо!</blockquote>
-          <div class="fw-bold">Александр, Лида</div>
+          <blockquote class="blockquote">Нужно было срочно выкопать котлован под бассейн. Приехали в тот же день, всё сделали быстро, даже не ожидала! Спасибо за оперативность.</blockquote>
+          <div class="fw-bold">Вера, Лида</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Отличная техника, вежливый оператор. Рекомендую!</blockquote>
-          <div class="fw-bold">Мария, Берёзовка</div>
+          <blockquote class="blockquote">Думал, что не получится выкопать траншею возле старого забора, но ребята нашли решение и всё сделали аккуратно. Очень доволен результатом!</blockquote>
+          <div class="fw-bold">Андрей, Берёзовка</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Всё чётко, цена как договаривались. Буду обращаться ещё!</blockquote>
-          <div class="fw-bold">Игорь, Лида</div>
+          <blockquote class="blockquote">Спасибо за помощь с планировкой участка! Всё рассчитали, объяснили, сделали ровно как просила. Теперь участок ровный, как стол.</blockquote>
+          <div class="fw-bold">Ирина, Лида</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Очень понравился сервис! Всё быстро и профессионально.</blockquote>
+          <blockquote class="blockquote">Заказал выемку грунта под фундамент. Всё сделали за один день, хотя думал, что уйдёт два. Сэкономили мне кучу времени!</blockquote>
+          <div class="fw-bold">Сергей, Щучин</div>
+        </div>
+        <div class="carousel-item text-center">
+          <blockquote class="blockquote">Очень порадовало, что можно заказать экскаватор ночью. Приехали к 23:00, всё сделали, никто не подвёл. Рекомендую!</blockquote>
           <div class="fw-bold">Ольга, Новогрудок</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/men/21.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Приехали вовремя, техника новая. Спасибо за работу!</blockquote>
-          <div class="fw-bold">Владимир, Щучин</div>
+          <blockquote class="blockquote">Во время работы пошёл сильный дождь, думал всё отменится. Но после дождя водитель вернулся и продолжил, время не потеряли. Очень выручили!</blockquote>
+          <div class="fw-bold">Владимир, Лида</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/men/77.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Очень вежливый водитель, всё объяснил и помог. Буду советовать друзьям!</blockquote>
-          <div class="fw-bold">Сергей, Лида</div>
+          <blockquote class="blockquote">Спасибо за помощь с вывозом старого грунта! Всё быстро, без лишних вопросов, цена как договаривались.</blockquote>
+          <div class="fw-bold">Роман, Дятлово</div>
         </div>
         <div class="carousel-item text-center">
-          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" style="width:70px; height:70px; object-fit:cover;" alt="Клиент">
-          <blockquote class="blockquote">Спасибо за отличную работу! Всё сделали аккуратно и быстро.</blockquote>
-          <div class="fw-bold">Екатерина, Дятлово</div>
+          <blockquote class="blockquote">Очень понравилось, что всё можно обсудить по телефону, а потом просто приехать и принять готовую работу. Всё чётко и по делу!</blockquote>
+          <div class="fw-bold">Елена, Лида</div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
@@ -1008,22 +1093,23 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-7">
-        <form class="order-form p-4 p-md-5 mx-auto rounded-4 shadow-lg animate__animated animate__fadeInUp" id="contact-form">
+        <form class="order-form p-4 p-md-5 mx-auto rounded-4 shadow-lg animate__animated animate__fadeInUp" id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
           <h4 class="mb-4 text-center fw-bold section-title">Заказать услугу</h4>
           <div class="row g-3">
             <div class="col-md-6">
-              <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required>
+              <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" name="name" required>
             </div>
             <div class="col-md-6">
-              <input type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
+              <input type="tel" class="form-control form-control-lg" placeholder="Телефон" name="phone" required>
             </div>
             <div class="col-12">
-              <select class="form-select form-select-lg" required>
+              <select class="form-select form-select-lg" name="service" required>
                 <option value="" disabled selected>Выберите услугу</option>
                 <option>Уборка снега</option>
                 <option>Планировка участка</option>
                 <option>Погрузка/выгрузка песка и гравия</option>
                 <option>Земельные работы</option>
+                <option>Другие работы</option>
               </select>
             </div>
             <div class="col-12 text-center mt-3">
@@ -1056,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-contacts">
           <h5 class="footer-title mb-3">Контакты</h5>
           <div class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+375297849544" class="contact-link">+375 29 784-95-44</a></div>
-          <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@example.com" class="contact-link">info@example.com</a></div>
+          <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a href="excavatorlida@gmail.com" class="contact-link">excavatorlida@gmail.com</a></div>
           <div class="contact-item"><i class="bi bi-geo-alt-fill me-2"></i><span class="contact-text">г. Лида, Лидский район</span></div>
         </div>
       </div>
@@ -1073,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div class="footer-bottom border-top mt-4 pt-3 text-center text-secondary small">
-      © 2025 Экскаватор Лида. Все права защищены. Работаем <span class="text-warning">24/7</span>
+      © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span>
     </div>
   </div>
 </footer>
@@ -1098,7 +1184,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   /* === HERO С НОВЫМ ГРАДИЕНТОМ === */
   .hero-section {
-    background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/excavator.jpg') center/cover no-repeat;
+    background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/amkodor.jpg') center/cover no-repeat;
     min-height: 75vh;
     position: relative;
     overflow: hidden;
@@ -1464,11 +1550,48 @@ window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.section-divider').forEach(div => div.classList.add('reveal'));
   revealOnScroll();
 });
+
+// === ОТПРАВКА ФОРМЫ В TELEGRAM ===
+// Замените значения ниже на свои:
+const telegramBotToken = 'ВАШ_ТОКЕН'; // <-- ВСТАВЬТЕ СЮДА ТОКЕН ВАШЕГО БОТА
+const telegramChatId = 'ВАШ_CHAT_ID'; // <-- ВСТАВЬТЕ СЮДА chat_id (группы, канала или пользователя)
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = form.querySelector('input[placeholder="Ваше имя"]').value.trim();
+      const phone = form.querySelector('input[placeholder="Телефон"]').value.trim();
+      const service = form.querySelector('select').value;
+      if (!name || !phone || !service) {
+        alert('Пожалуйста, заполните все поля!');
+        return;
+      }
+      const text = `📝 Новая заявка с сайта!%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AУслуга: ${encodeURIComponent(service)}`;
+      fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${text}`, {
+        method: 'GET'
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+          alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+          form.reset();
+        } else {
+          alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
+        }
+      })
+      .catch(() => {
+        alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
+      });
+    });
+  }
+});
 </script>
 
 <!-- === SVG-РАЗДЕЛИТЕЛЬ (ВОЛНА) === -->
-<div class="section-divider">
-  <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"/></svg>
+<div class="section-divider" style="width:100vw;min-width:100vw;left:50%;transform:translateX(-50%);position:relative;margin:0;padding:0;">
+  <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"/></svg>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
