@@ -735,6 +735,79 @@
       .reviews-carousel-flex .carousel-inner { min-height: 210px; }
     }
   </style>
+  <style>
+    /* --- Адаптивная шапка и соцсети --- */
+    @media (max-width: 767px) {
+      .header-container.stylish-header {
+        padding: 0.4rem 0.2rem !important;
+        border-radius: 0 0 1.2rem 1.2rem;
+        min-height: unset;
+      }
+      .stylish-header-inner {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: unset;
+        gap: 0.5rem !important;
+      }
+      .logo-img {
+        height: 44px !important;
+        max-width: 60px !important;
+        margin: 0 auto 0.2rem auto;
+        padding: 0.1rem 0.5rem;
+        border-radius: 0.7rem;
+      }
+      .header-container .btn-outline-warning {
+        font-size: 0.98rem;
+        padding: 0.4rem 0.9rem;
+        margin: 0 0.2rem 0.2rem 0;
+      }
+      .header-container .btn-orange {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+        margin: 0.2rem 0 0.2rem 0;
+      }
+      .header-container .d-none.d-md-block {
+        display: none !important;
+      }
+      .header-container .d-flex.align-items-center.gap-3 {
+        justify-content: center;
+        gap: 0.3rem !important;
+        margin-bottom: 0.2rem;
+      }
+      .header-container .social-item {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 1.2rem !important;
+        border-radius: 50% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        margin: 0 0.1rem;
+        box-shadow: 0 1px 4px #ffd60033;
+        border: 1.5px solid #1a237e;
+        background: #fffbe6;
+      }
+      .header-container .social-item.instagram {
+        background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%) !important;
+        color: #fff !important;
+        border: none;
+      }
+      .header-container .social-item.viber {
+        color: #7360f2 !important;
+        border-color: #7360f2 !important;
+      }
+      .header-container .social-item.telegram {
+        color: #229ed9 !important;
+        border-color: #229ed9 !important;
+      }
+      .header-container .social-item:active,
+      .header-container .social-item:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #ffd60055;
+      }
+    }
+  </style>
 </head>
 
 <body style="background: var(--main-yellow-light);">
