@@ -1,40 +1,1307 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Аренда экскаватора в Лиде — Excavator-Lida.by</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Аренда экскаватора в Лиде — Excavator-Lida.by</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Аренда экскаватора в Лиде и районе. Быстрый выезд, опытные операторы, скидки до 20%. Работаем 24/7. Звоните: +375 44 111-22-33">
-  <meta name="keywords" content="экскаватор Лида, аренда экскаватора, спецтехника Лида, земляные работы Лида, копка траншей Лида">
-  <meta name="author" content="excavator-lida.by">
-  <meta name="robots" content="index, follow">
+    <!-- SEO -->
+    <meta name="description"
+          content="Аренда экскаватора в Лиде и районе. Быстрый выезд, опытные операторы, скидки до 20%. Работаем 24/7. Звоните: +375 44 111-22-33">
+    <meta name="keywords"
+          content="экскаватор Лида, аренда экскаватора, спецтехника Лида, земляные работы Лида, копка траншей Лида">
+    <meta name="author" content="excavator-lida.by">
+    <meta name="robots" content="index, follow">
 
-  <!-- Open Graph для соцсетей -->
-  <meta property="og:title" content="Аренда экскаватора в Лиде — Excavator-Lida.by">
-  <meta property="og:description" content="Быстрый выезд, опытный оператор, скидки до 20%. Закажите услуги экскаватора 24/7 по телефону +375 44 111-22-33">
-  <meta property="og:url" content="https://excavator-lida.by/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://excavator-lida.by/img/logo.png">
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Аренда экскаватора в Лиде — Excavator-Lida.by">
+    <meta property="og:description"
+          content="Быстрый выезд, опытный оператор, скидки до 20%. Закажите услуги экскаватора 24/7 по телефону +375 44 111-22-33">
+    <meta property="og:url" content="https://excavator-lida.by/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://excavator-lida.by/img/logo.png">
+    \
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://excavator-lida.netlify.app/">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <style>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+          --main-yellow: #FFE082;
+          --main-orange: #FFB74D;
+          --main-blue: #b3b9c9;
+          --main-blue-light: #dbe3ea;
+          --main-brown: #8D6748;
+          --main-brown-dark: #5a4636;
+          --main-yellow-light: #FFF8E1;
+          --main-brown-light: #c9a47a;
+        }
+        body {
+          font-family: 'Inter', sans-serif;
+          background: var(--main-yellow-light);
+          color: var(--main-brown-dark);
+        }
+        .header-divider {
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(90deg, var(--main-brown) 0%, var(--main-yellow) 100%);
+          border-radius: 2px;
+          margin: 1.5rem 0 2rem 0;
+          box-shadow: 0 2px 8px #ffd60033;
+        }
+        .header-container {
+          background: linear-gradient(90deg, var(--main-yellow) 60%, var(--main-brown-light) 100%);
+          border-bottom: 4px solid var(--main-brown);
+          box-shadow: 0 8px 32px 0 rgba(124,71,0,0.12);
+          border-radius: 0 0 2rem 2rem;
+          padding-top: 1.5rem;
+          padding-bottom: 0.5rem;
+          position: relative;
+          z-index: 10;
+        }
+        .header-container .btn-orange {
+          font-size: 1.15rem;
+          padding: 0.7rem 2.2rem;
+          border-radius: 2rem;
+          font-weight: 700;
+          box-shadow: 0 2px 8px #ffd60033;
+        }
+        .header-container .btn-orange:hover {
+          background: var(--main-brown);
+          color: #fff;
+        }
+        .header-container .social-item {
+          transition: background 0.2s, color 0.2s;
+          border: none;
+          background: transparent !important;
+          box-shadow: none !important;
+        }
+        .header-container .social-item:hover {
+          background: var(--main-orange);
+          color: #fff;
+          box-shadow: none;
+        }
+        .header-container h1 {
+          color: var(--main-brown-dark);
+          font-weight: 800;
+          letter-spacing: 1px;
+          text-shadow: 0 2px 8px #fff3;
+        }
+        .main-subtitle {
+          font-size: 1.25rem;
+          color: var(--main-brown);
+          margin-bottom: 1.5rem;
+          min-height: 2.5rem;
+          font-weight: 500;
+        }
+        .animated-text {
+          border-right: 2px solid var(--main-brown);
+          padding-right: 4px;
+          font-family: inherit;
+        }
+        .discount-banner {
+          background: linear-gradient(90deg, var(--main-orange) 60%, var(--main-yellow) 100%);
+          border-radius: 1.5rem;
+          box-shadow: 0 2px 12px 0 #ffb30033;
+          margin: 2rem 0 1.5rem 0;
+          padding: 1.2rem 2rem;
+          color: var(--main-brown-dark);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .discount-content {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+        }
+        .discount-icon {
+          font-size: 2.5rem;
+          color: var(--main-brown);
+          background: #fff8e1;
+          border-radius: 50%;
+          padding: 0.7rem 1rem;
+          box-shadow: 0 2px 8px #ffd60033;
+        }
+        .discount-text h3 {
+          margin: 0;
+          color: var(--main-brown-dark);
+          font-weight: 700;
+        }
+        .discount-text p {
+          margin: 0;
+          color: var(--main-brown);
+          font-size: 1rem;
+        }
+        .pricing-section {
+          display: flex;
+          justify-content: center;
+          margin: 2rem 0 1.5rem 0;
+        }
+        .price-card {
+          background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);
+          border: 2px solid var(--main-brown);
+          border-radius: 1.5rem;
+          box-shadow: 0 2px 16px 0 #ffd60033;
+          padding: 2rem 2.5rem;
+          max-width: 340px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .price-header {
+          margin-bottom: 1rem;
+        }
+        .price-amount {
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: var(--main-brown);
+        }
+        .price-period {
+          color: var(--main-brown-dark);
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+        .price-minimum {
+          color: var(--main-brown);
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .price-features .feature-item {
+          color: var(--main-brown-dark);
+          font-size: 1rem;
+          margin-bottom: 0.2rem;
+        }
+        .price-btn {
+          display: inline-block;
+          margin-top: 1.2rem;
+          background: var(--main-brown);
+          color: #fff;
+          border-radius: 2rem;
+          padding: 0.7rem 2rem;
+          font-weight: 600;
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: background 0.2s;
+        }
+        .price-btn:hover {
+          background: var(--main-brown-dark);
+          color: #fff;
+        }
+        .advantage-card {
+          background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);
+          border: 2px solid var(--main-brown);
+          border-radius: 1.2rem;
+          box-shadow: 0 2px 12px 0 #ffd60022;
+          padding: 1.2rem 1.2rem 1rem 1.2rem;
+          color: var(--main-brown-dark);
+          text-align: center;
+          min-height: 170px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .advantage-card .fw-bold {
+          color: var(--main-brown);
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+          letter-spacing: 0.5px;
+        }
+        .advantage-card .small {
+          color: var(--main-brown-dark);
+          font-size: 0.98rem;
+        }
+        .btn-orange, .btn.btn-orange {
+          background: var(--main-orange);
+          color: var(--main-brown-dark);
+          border: none;
+          font-weight: 700;
+          border-radius: 2rem;
+          transition: background 0.2s, color 0.2s;
+        }
+        .btn-orange:hover, .btn.btn-orange:hover {
+          background: var(--main-brown);
+          color: #fff;
+        }
+        .how-to-order-section {
+          background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+          border-top: 3px solid var(--main-brown);
+          border-bottom: 3px solid var(--main-brown);
+        }
+        .how-to-order-title {
+          color: var(--main-brown-dark);
+          font-weight: 800;
+          letter-spacing: 1px;
+        }
+        .how-to-order-subtitle {
+          color: var(--main-brown);
+          font-size: 1.1rem;
+        }
+        .step-card {
+          background: #fffde7;
+          border: 2px solid var(--main-brown);
+          border-radius: 1.2rem;
+          box-shadow: 0 2px 12px 0 #ffd60022;
+          padding: 1.5rem 1rem 1.2rem 1rem;
+          color: var(--main-brown-dark);
+          text-align: center;
+          min-height: 270px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        .step-number {
+          background: var(--main-brown);
+          color: #fff;
+          font-size: 1.3rem;
+          font-weight: 700;
+          border-radius: 50%;
+          width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 0.7rem;
+          box-shadow: 0 2px 8px #ffd60033;
+        }
+        .step-icon {
+          font-size: 2rem;
+          color: var(--main-orange);
+          margin-bottom: 0.5rem;
+        }
+        .step-card h4 {
+          color: var(--main-brown);
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+        .step-card p, .delivery-info {
+          color: var(--main-brown-dark);
+          font-size: 1rem;
+        }
+        .delivery-info strong {
+          color: var(--main-brown);
+          font-size: 0.98rem;
+        }
+        .services-section {
+          background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+          border-top: 3px solid var(--main-brown);
+          border-bottom: 3px solid var(--main-brown);
+        }
+        .services-title {
+          color: var(--main-brown-dark);
+          font-weight: 800;
+          letter-spacing: 1px;
+        }
+        .service-card {
+          background: #fffde7;
+          border: 2px solid var(--main-brown);
+          border-radius: 1.2rem;
+          box-shadow: 0 2px 12px 0 #ffd60022;
+          padding: 0;
+          color: var(--main-brown-dark);
+          text-align: center;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+        .service-image {
+          width: 100%;
+          height: 160px;
+          overflow: hidden;
+          background: var(--main-yellow);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .service-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-bottom: 2px solid var(--main-brown);
+        }
+        .service-content {
+          padding: 1.2rem 1rem 1.2rem 1rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .service-name {
+          color: var(--main-brown);
+          font-weight: 700;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+        }
+        .service-btn {
+          margin-top: auto;
+          background: var(--main-orange);
+          color: var(--main-brown-dark);
+          border-radius: 2rem;
+          font-weight: 700;
+          border: none;
+          transition: background 0.2s, color 0.2s;
+        }
+        .service-btn:hover {
+          background: var(--main-brown);
+          color: #fff;
+        }
+        .faq-section {
+          background: #fffde7;
+          border: 2px solid var(--main-brown);
+          border-radius: 1.5rem;
+          box-shadow: 0 2px 12px 0 #ffd60022;
+          color: var(--main-brown-dark);
+        }
+        .faq-section h4 {
+          color: var(--main-brown);
+          font-weight: 700;
+        }
+        .custom-faq .faq-item {
+          border-bottom: 1px solid #ffe082;
+          margin-bottom: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+        .custom-faq .faq-question {
+          background: none;
+          border: none;
+          color: var(--main-brown-dark);
+          font-weight: 600;
+          font-size: 1.08rem;
+          width: 100%;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          padding: 0.5rem 0;
+          cursor: pointer;
+          transition: color 0.2s;
+        }
+        .custom-faq .faq-question:hover {
+          color: var(--main-brown);
+        }
+        .custom-faq .faq-icon svg {
+          vertical-align: middle;
+        }
+        .custom-faq .faq-answer {
+          display: none;
+          color: var(--main-brown-dark);
+          font-size: 1rem;
+          margin-top: 0.3rem;
+          padding-left: 2.2rem;
+        }
+        .custom-faq .faq-item.open .faq-answer {
+          display: block;
+          animation: fadeIn 0.3s;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px);}
+          to { opacity: 1; transform: none;}
+        }
+        .order-form {
+          background: #fffde7;
+          border: 2px solid var(--main-brown);
+          border-radius: 1.5rem;
+          box-shadow: 0 2px 12px 0 #ffd60022;
+          color: var(--main-brown-dark);
+        }
+        .order-form h4 {
+          color: var(--main-brown);
+          font-weight: 700;
+        }
+        .form-control, .form-select {
+          border-radius: 2rem;
+          border: 2px solid var(--main-brown);
+          background: #fffbe6;
+          color: var(--main-brown-dark);
+          font-weight: 500;
+        }
+        .form-control:focus, .form-select:focus {
+          border-color: var(--main-orange);
+          box-shadow: 0 0 0 0.2rem #ffd60044;
+        }
+        .footer-section {
+          background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+          color: var(--main-brown-dark);
+          border-top: 4px solid var(--main-yellow);
+          margin-top: 3rem;
+          padding-top: 2.5rem;
+          padding-bottom: 1.5rem;
+          box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
+        }
+        .footer-logo {
+          height: 100px;
+          max-width: 180px;
+          margin-bottom: 1rem;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .footer-description {
+          color: var(--main-brown-dark);
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+        .footer-social .social-link {
+          font-size: 1.5rem;
+          margin-right: 0.7rem;
+          color: var(--main-brown);
+          background: #fffbe6;
+          border-radius: 50%;
+          padding: 0.4rem 0.6rem;
+          transition: background 0.2s, color 0.2s;
+          border: 1.5px solid var(--main-brown);
+        }
+        .footer-social .social-link:hover {
+          background: var(--main-orange);
+          color: #fff;
+        }
+        .footer-title {
+          color: var(--main-brown-dark);
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+        .footer-contacts .contact-item {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          margin-bottom: 0.7rem;
+          color: var(--main-brown-dark);
+        }
+        .footer-contacts .contact-link {
+          color: var(--main-brown-dark);
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.2s;
+        }
+        .footer-contacts .contact-link:hover {
+          color: var(--main-brown);
+        }
+        .footer-services .footer-menu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .footer-services .footer-link {
+          color: var(--main-brown-dark);
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.2s;
+        }
+        .footer-services .footer-link:hover {
+          color: var(--main-brown);
+          text-decoration: underline;
+        }
+        .footer-bottom {
+          border-top: 2px solid var(--main-brown);
+          margin-top: 2rem;
+          padding-top: 1rem;
+          color: var(--main-brown-dark);
+          font-size: 0.98rem;
+        }
+        .copyright {
+          margin: 0;
+        }
+        .work-time {
+          margin: 0;
+          color: var(--main-brown);
+          font-weight: 600;
+        }
+        #scrollTopBtn {
+          background: var(--main-orange);
+          color: var(--main-brown-dark);
+          border: none;
+          box-shadow: 0 2px 8px #ffd60033;
+          transition: background 0.2s, color 0.2s;
+        }
+        #scrollTopBtn:hover {
+          background: var(--main-brown);
+          color: #fff;
+        }
+        /* Animations */
+        .fade-in-up {
+          animation: fadeInUp 0.8s;
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px);}
+          to { opacity: 1; transform: none;}
+        }
+        /* Responsive tweaks */
+        @media (max-width: 767px) {
+          .header-container {
+            padding-top: 0.7rem;
+            padding-bottom: 0.2rem;
+            border-radius: 0 0 1.2rem 1.2rem;
+          }
+          .header-divider {
+            margin: 1rem 0 1.2rem 0;
+          }
+          .header-container .btn-orange {
+            font-size: 1rem;
+            padding: 0.5rem 1.2rem;
+          }
+          .discount-banner, .pricing-section {
+            flex-direction: column;
+            padding: 1rem;
+          }
+          .price-card {
+            padding: 1.2rem 1rem;
+          }
+        }
+        @media (max-width: 991px) {
+          .footer-logo { height: 60px !important; max-width: 110px !important; }
+        }
+    </style>
+    <!-- === КРУТЫЕ СТИЛИ ДЛЯ СОЦСЕТЕЙ И РАЗДЕЛИТЕЛЕЙ === -->
+    <style>
+        /* ... существующие стили ... */
+        /* === СОЦСЕТИ: фирменные цвета и без подчеркивания === */
+        .social-item, .footer-social .social-link {
+          background: #fffbe6;
+          border-radius: 50%;
+          transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+          box-shadow: 0 2px 8px #ffd60033;
+          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none !important;
+          border: none;
+        }
+        .social-item.viber, .footer-social .social-link.viber { color: #7360f2; }
+        .social-item.telegram, .footer-social .social-link.telegram { color: #229ed9; }
+        .social-item.instagram, .footer-social .social-link.instagram {
+          color: #e1306c;
+          background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+        }
+        .social-item:hover, .footer-social .social-link:hover {
+          background: var(--main-orange);
+          color: #fff;
+          box-shadow: 0 4px 16px #ffd60055;
+          transform: scale(1.08);
+          text-decoration: none !important;
+        }
+        /* === КРАСИВЫЙ РАЗДЕЛИТЕЛЬ-БЛОКОВ (волна) === */
+        .section-divider {
+          width: 100%;
+          height: 60px;
+          display: block;
+          line-height: 0;
+          margin: -1px 0 0 0;
+          background: none;
+          border: none;
+          padding: 0;
+        }
+        .section-divider svg {
+          display: block;
+          width: 100%;
+          height: 60px;
+        }
+    </style>
+    <style>
+        /* ... остальные стили ... */
+        .section-divider-glow {
+          width: 100%;
+          height: 2px;
+          border: none;
+          background: linear-gradient(90deg, transparent 0%, #dbe3ea 30%, #b3b9c9 50%, #dbe3ea 70%, transparent 100%);
+          box-shadow: 0 0 8px 0 #b3b9c933;
+          border-radius: 1px;
+          margin: 40px 0 40px 0;
+          opacity: 0.7;
+          transition: box-shadow 0.3s, opacity 0.3s;
+        }
+        .section-divider-glow:hover {
+          opacity: 1;
+          box-shadow: 0 0 16px 2px #dbe3ea55;
+        }
+        /* Удаляю коричневые разделители и бордеры */
+        .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
+          border: none !important;
+          box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
+        }
+        @media (max-width: 767px) {
+          .section-divider-glow { margin: 20px 0 20px 0; height: 1.5px; }
+        }
+    </style>
+    <style>
+        /* ... остальные стили ... */
+        /* Удаляю коричневые линии между блоками и любые бордеры с коричневым */
+        .discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section, .footer-section {
+          border: none !important;
+          box-shadow: none !important;
+        }
+        .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
+          border: none !important;
+          box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
+        }
+        .section-divider-glow {
+          border: none !important;
+        }
+        /* Удаляю любые background или border с var(--main-brown), var(--main-brown-dark), var(--main-brown-light) */
+        [style*="var(--main-brown)"], [style*="var(--main-brown-dark)"], [style*="var(--main-brown-light)"] {
+          border: none !important;
+          background: none !important;
+          box-shadow: none !important;
+        }
+    </style>
+    <style>
+        .initials-avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
+          color: #fff;
+          font-weight: 800;
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1rem auto;
+          box-shadow: 0 2px 12px #ffd60055;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        .carousel-control-prev, .carousel-control-next {
+          width: 40px;
+          height: 40px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(255, 214, 0, 0.15);
+          border-radius: 50%;
+          box-shadow: none;
+          opacity: 0.85;
+          z-index: 2;
+          transition: background 0.2s, opacity 0.2s;
+        }
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+          background: rgba(255, 179, 0, 0.25);
+          opacity: 1;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+          background-size: 60% 60%;
+          width: 1.5rem;
+          height: 1.5rem;
+          filter: drop-shadow(0 2px 8px #ffd60055);
+        }
+        .carousel-inner .carousel-item {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+    </style>
+    <style>
+        .reviews-carousel-flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          max-width: 700px;
+          margin: 0 auto;
+          position: relative;
+        }
+        .reviews-carousel-flex .carousel-inner {
+          min-height: 180px;
+          width: 100%;
+          overflow: visible;
+          /* убираю display: flex */
+        }
+        .reviews-carousel-flex .carousel-item {
+          margin: 0;
+          width: 100%;
+          overflow: visible;
+          /* убираю display: flex */
+          word-break: break-word;
+          white-space: normal;
+        }
+        .reviews-carousel-flex .carousel-item .blockquote {
+          word-break: break-word;
+          white-space: normal;
+        }
+        .reviews-carousel-flex .carousel-control-prev,
+        .reviews-carousel-flex .carousel-control-next {
+          position: static;
+          margin: 0 0.5rem;
+          flex-shrink: 0;
+          z-index: 1;
+        }
+        .reviews-carousel-flex .carousel-control-prev-icon,
+        .reviews-carousel-flex .carousel-control-next-icon {
+          margin: 0;
+        }
+        @media (max-width: 767px) {
+          .reviews-carousel-flex { max-width: 98vw; }
+          .reviews-carousel-flex .carousel-inner { min-height: 210px; }
+        }
+    </style>
+    <style>
+        .review-card {
+          background: #fff;
+          border-radius: 1.5rem;
+          box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
+          transition: box-shadow 0.2s, transform 0.15s;
+          position: relative;
+        }
+        .review-card:hover {
+          box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
+          transform: translateY(-6px) scale(1.03);
+        }
+        .initials-avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
+          color: #fff;
+          font-weight: 800;
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1rem auto;
+          box-shadow: 0 2px 12px #ffd60055;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        .review-text {
+          font-size: 1.08rem;
+          color: var(--main-brown-dark);
+          margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body style="background: var(--main-yellow-light);">
+
+<!-- === HERO-СЕКЦИЯ С ПАРАЛЛАКСОМ === -->
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-center"
+         style="min-height: 70vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
+         style="background: rgba(44, 32, 7, 0.55); z-index: 1;"></div>
+    <div class="container position-relative z-2" style="z-index:2;">
+        <h1 class="display-2 fw-bold text-white mb-4 hero-title animate__animated animate__fadeInDown">Аренда
+            экскаватора в Лиде и районе</h1>
+        <p class="lead text-white-50 mb-5 animate__animated animate__fadeInUp animate__delay-1s">Профессиональные услуги
+            спецтехники для любых задач. Быстро, аккуратно, выгодно!</p>
+        <a href="#"
+           class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s"
+           data-bs-toggle="modal" data-bs-target="#orderModal">
+            <i class="bi bi-chat-dots-fill me-2"></i> Заказать услугу
+        </a>
+    </div>
+</section>
+<!-- Разделитель после hero -->
+<div class="section-divider-glow"></div>
+
+<!-- === ШАПКА (максимально крутая, без лишних разделителей и закруглений) === -->
+<header class="header-container stylish-header sticky-top" style="z-index: 100;">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2 stylish-header-inner animate__animated animate__fadeInDown">
+        <img src="img/logo.png" alt="Аренда экскаватора" class="logo-img" style="height: 80px; max-width: 110px;">
+        <div class="d-none d-md-block text-center">
+            <span class="fw-semibold text-dark">Работаем <span class="text-warning">24/7</span></span>
+            <span class="text-muted small ms-2">Без выходных и праздников</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <a href="tel:+375297849544" class="btn btn-outline-warning rounded-pill fw-bold px-3"><i
+                    class="bi bi-phone-fill me-1"></i>+375 29 784-95-44</a>
+            <a href="viber://chat?number=+375297849544" target="_blank"
+               class="social-item viber d-flex align-items-center justify-content-center rounded-circle" title="Viber"
+               style="width: 38px; height: 38px;"><i class="fab fa-viber"></i></a>
+            <a href="https://t.me/sashaamkador" target="_blank"
+               class="social-item telegram d-flex align-items-center justify-content-center rounded-circle"
+               title="Telegram" style="width: 38px; height: 38px;"><i class="fab fa-telegram"></i></a>
+            <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank"
+               class="social-item instagram d-flex align-items-center justify-content-center rounded-circle"
+               title="Instagram" style="width: 38px; height: 38px;"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="btn btn-orange d-md-none ms-2" data-bs-toggle="modal"
+           data-bs-target="#orderModal">Заказать</a>
+    </div>
+</header>
+
+<!-- Удаляю разделитель сразу после шапки (section-divider-top) -->
+
+<!-- === КРАСИВЫЕ SVG-РАЗДЕЛИТЕЛИ (дуга) === -->
+<div class="section-divider-glow"></div>
+
+<!-- === СЕКЦИЯ СКИДКИ === -->
+<section class="discount-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
+    <div class="container">
+        <div class="discount-banner d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 p-4 rounded-4 shadow-lg animate__animated animate__fadeInUp">
+            <div class="discount-icon bg-white rounded-circle d-flex align-items-center justify-content-center"
+                 style="width: 60px; height: 60px; font-size: 2.2rem; color: var(--main-brown);">
+                <i class="bi bi-percent"></i>
+            </div>
+            <div class="discount-text text-center text-md-start">
+                <h2 class="fw-bold mb-1 section-title">Скидка до 20% постоянным клиентам</h2>
+                <p class="mb-0 text-secondary section-subtitle">Второй и последующие заказы — дешевле!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === СЕКЦИЯ ЦЕН === -->
+<section class="price-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg p-4 rounded-4 animate__animated animate__fadeInUp d-flex flex-column flex-md-row align-items-stretch gap-4"
+                     style="background: #fffbe6; border: none;">
+                    <!-- Левая часть: стоимость и условия -->
+                    <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center border-end-md pe-md-4"
+                         style="min-width:220px;">
+                        <div class="price-amount display-3 fw-bold mb-2">80 Br</div>
+                        <div class="price-period text-secondary mb-2 fs-5">в час</div>
+                        <div class="price-minimum text-warning mb-2">Минимум 4 часа</div>
+                        <ul class="list-unstyled mb-3 fs-5">
+                            <li class="mb-1"><i class="bi bi-clock-history text-warning me-2"></i>Выезд в течение 2
+                                часов
+                            </li>
+                            <li class="mb-1"><i class="bi bi-person-check text-warning me-2"></i>Опытный водитель</li>
+                            <li class="mb-1"><i class="bi bi-cash-coin text-warning me-2"></i>Все расходы включены</li>
+                            <li class="mb-1"><i class="bi bi-moon-stars text-warning me-2"></i>Работаем 24/7</li>
+                        </ul>
+                        <a href="#" class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2"
+                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-telephone-fill me-2"></i>Заказать
+                            сейчас</a>
+                    </div>
+                    <!-- Правая часть: калькулятор -->
+                    <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center ps-md-4">
+                        <h5 class="mb-3 fw-bold section-title">Калькулятор аренды</h5>
+                        <form id="rentCalcForm"
+                              class="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center mb-3">
+                            <label for="hoursInput" class="form-label mb-0 me-2">Часов аренды:</label>
+                            <input type="number" min="4" max="100" step="1" value="4" id="hoursInput"
+                                   class="form-control form-control-lg w-auto" style="max-width:120px;">
+                            <span class="ms-2">× 80 Br/час</span>
+                        </form>
+                        <div class="mt-2 text-center">
+                            <div id="calcResult" class="fs-4 fw-bold text-success">Итого: 320 Br</div>
+                            <div id="calcDiscount" class="text-info mt-2" style="display:none;">Скидка 10% за 10+
+                                часов!
+                            </div>
+                            <div class="small text-secondary mt-2">Минимальный заказ — 4 часа. Скидка 10% при заказе от
+                                10 часов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    // Калькулятор аренды экскаватора
+    function updateRentCalc() {
+      const hours = Math.max(4, parseInt(document.getElementById('hoursInput').value) || 4);
+      let total = hours * 80;
+      let discount = 0;
+      if (hours >= 10) {
+        discount = 0.1;
+        total = Math.round(total * 0.9);
+        document.getElementById('calcDiscount').style.display = '';
+      } else {
+        document.getElementById('calcDiscount').style.display = 'none';
+      }
+      document.getElementById('calcResult').textContent = `Итого: ${total} Br`;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('hoursInput').addEventListener('input', updateRentCalc);
+      updateRentCalc();
+    });
+</script>
+<div class="section-divider-glow"></div>
+
+<!-- === ПРЕИМУЩЕСТВА === -->
+<section class="advantages-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="fw-bold fs-3 mb-2">🚚</div>
+                    <div class="fw-bold fs-5 mb-2">Быстрая доставка</div>
+                    <div class="text-secondary">Оперативно прибываем на место благодаря исправной технике.</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="fw-bold fs-3 mb-2">👷</div>
+                    <div class="fw-bold fs-5 mb-2">Забота о вашем объекте</div>
+                    <div class="text-secondary">Работаем аккуратно и профессионально — с заботой о вашем участке.</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="fw-bold fs-3 mb-2">🛠️</div>
+                    <div class="fw-bold fs-5 mb-2">10-летний опыт</div>
+                    <div class="text-secondary">С 2013 года выполнили более 2 000 работ разной сложности.</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="fw-bold fs-3 mb-2">💰</div>
+                    <div class="fw-bold fs-5 mb-2">Гарантия низких цен</div>
+                    <div class="text-secondary">Собственный парк техники — лучшие цены в регионе.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === КАК ЗАКАЗАТЬ === -->
+<section class="how-to-order-section py-5 bg-white bg-opacity-75">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="how-to-order-title display-5 fw-bold mb-2 section-title">Как заказать технику</h2>
+                <p class="how-to-order-subtitle text-secondary section-subtitle">Простой процесс заказа в 4 шага</p>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">01</div>
+                    <div class="step-icon mb-2 fs-2"><i class="bi bi-chat-dots-fill"></i></div>
+                    <h4 class="fw-bold mb-2">Заявка</h4>
+                    <p class="text-secondary mb-0">Оставьте заявку по телефону <br><strong>+375 29
+                        784-95-44</strong><br> или на сайте.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">02</div>
+                    <div class="step-icon mb-2 fs-2"><i class="bi bi-telephone-fill"></i></div>
+                    <h4 class="fw-bold mb-2">Согласование</h4>
+                    <p class="text-secondary mb-0">Согласуем технику, стоимость и место работ.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">03</div>
+                    <div class="step-icon mb-2 fs-2"><i class="bi bi-truck"></i></div>
+                    <h4 class="fw-bold mb-2">Доставка</h4>
+                    <p class="text-secondary mb-1">Доставим экскаватор на объект в назначенное время.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">04</div>
+                    <div class="step-icon mb-2 fs-2"><i class="bi bi-credit-card-fill"></i></div>
+                    <h4 class="fw-bold mb-2">Оплата</h4>
+                    <p class="text-secondary mb-0">Оплата наличными или по безналу — после выполнения работ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === УСЛУГИ === -->
+<section class="services-section py-5" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="services-title display-5 fw-bold mb-2 section-title">Наши услуги</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp">
+                    <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
+                         style="height: auto;">
+                        <img src="img/snow.jpg" alt="Уборка снега" class="service-img w-100"
+                             style="height: 160px; object-fit: cover;">
+                    </div>
+                    <div class="service-content p-3">
+                        <h3 class="service-name fw-bold mb-3">Уборка снега</h3>
+                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
+                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
+                         style="height: auto;">
+                        <img src="img/planirovka.jpg" alt="Планировка участка" class="service-img w-100"
+                             style="height: 160px; object-fit: cover;">
+                    </div>
+                    <div class="service-content p-3">
+                        <h3 class="service-name fw-bold mb-3">Планировка участка</h3>
+                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
+                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
+                         style="height: auto;">
+                        <img src="img/pogruzka.jpg" alt="Погрузка/выгрузка песка и гравия" class="service-img w-100"
+                             style="height: 160px; object-fit: cover;">
+                    </div>
+                    <div class="service-content p-3">
+                        <h3 class="service-name fw-bold mb-3">Погрузка/выгрузка песка и гравия</h3>
+                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
+                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
+                         style="height: auto;">
+                        <img src="img/zeml.jpg" alt="Земельные работы" class="service-img w-100"
+                             style="height: 160px; object-fit: cover;">
+                    </div>
+                    <div class="service-content p-3">
+                        <h3 class="service-name fw-bold mb-3">Земельные работы</h3>
+                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
+                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === FAQ === -->
+<section class="faq-section container my-5 p-4 p-md-5 rounded-4 shadow-lg animate__animated animate__fadeInUp"
+         style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
+    <h4 class="mb-4 text-center fw-bold section-title">Нас часто спрашивают</h4>
+    <div class="custom-faq" id="customFaq">
+        <div class="faq-item mb-3">
+            <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
+                <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Сколько стоит аренда экскаватора?
+            </button>
+            <div class="faq-answer ps-4 text-secondary">Стоимость зависит от объёма и типа работ. Позвоните нам или
+                оставьте заявку — мы быстро рассчитаем цену под вашу задачу!
+            </div>
+        </div>
+        <div class="faq-item mb-3">
+            <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
+                <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Как быстро вы приезжаете на объект?
+            </button>
+            <div class="faq-answer ps-4 text-secondary">Обычно мы выезжаем в течение 1-2 часов после подтверждения
+                заказа. Работаем 24/7, без выходных!
+            </div>
+        </div>
+        <div class="faq-item mb-3">
+            <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
+                <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Какие документы нужны для заказа?
+            </button>
+            <div class="faq-answer ps-4 text-secondary">Для частных лиц — только телефон и адрес. Для организаций —
+                реквизиты для договора. Всё просто!
+            </div>
+        </div>
+        <div class="faq-item mb-3">
+            <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
+                <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Можно ли заказать экскаватор на
+                выходные или ночью?
+            </button>
+            <div class="faq-answer ps-4 text-secondary">Да, мы работаем круглосуточно и без выходных. Просто позвоните
+                или оставьте заявку на сайте!
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === ОТЗЫВЫ КЛИЕНТОВ (НОВЫЙ ДИЗАЙН) === -->
+<section class="reviews-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #e3e7fd 100%);">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Отзывы клиентов</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="initials-avatar mb-3">ВЛ</div>
+                    <div class="fw-bold mb-1">Вера, Лида</div>
+                    <div class="text-secondary small mb-2">Уборка снега</div>
+                    <div class="review-text">Очень понравилось, что приехали быстро и аккуратно убрали снег. Оператор
+                        вежливый, техника современная. Буду обращаться ещё!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="initials-avatar mb-3">АБ</div>
+                    <div class="fw-bold mb-1">Андрей, Берёзовка</div>
+                    <div class="text-secondary small mb-2">Планировка участка</div>
+                    <div class="review-text">Работа выполнена качественно и в срок. Всё объяснили, помогли с выбором
+                        услуги. Спасибо за профессионализм!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="initials-avatar mb-3">ИС</div>
+                    <div class="fw-bold mb-1">Ирина, Лида</div>
+                    <div class="text-secondary small mb-2">Погрузка песка</div>
+                    <div class="review-text">Очень удобно, что можно заказать технику даже вечером. Всё сделали быстро,
+                        цена приятная. Рекомендую друзьям!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="initials-avatar mb-3">СЩ</div>
+                    <div class="fw-bold mb-1">Сергей, Щучин</div>
+                    <div class="text-secondary small mb-2">Земельные работы</div>
+                    <div class="review-text">Экскаватор приехал вовремя, водитель опытный. Всё сделали за один день,
+                        участок остался чистым. Спасибо за работу!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-4s">
+                    <div class="initials-avatar mb-3">ЕН</div>
+                    <div class="fw-bold mb-1">Елена, Лида</div>
+                    <div class="text-secondary small mb-2">Вывоз грунта</div>
+                    <div class="review-text">Все вопросы решили по телефону, работа выполнена чётко и без задержек.
+                        Очень довольна сервисом!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider-glow"></div>
+
+<!-- === ФОРМА ЗАКАЗА (МОДАЛЬНОЕ ОКНО) === -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content order-form p-3 p-md-4 rounded-4">
+            <form action="https://formsubmit.co/excavatorlida@gmail.com" method="POST" autocomplete="on">
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title w-100 text-center fw-bold section-title" id="orderModalLabel">Заказать
+                        услугу</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body pt-2">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" name="name"
+                                   required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control form-control-lg" placeholder="Телефон" name="phone"
+                                   required>
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select form-select-lg" name="service" required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option>Уборка снега</option>
+                                <option>Планировка участка</option>
+                                <option>Погрузка/выгрузка песка и гравия</option>
+                                <option>Земельные работы</option>
+                                <option>Другие работы</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="_next" value="https://excavator-lida.netlify.app/?success=1">
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта Excavator-Lida.by">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-3 justify-content-center">
+                    <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить заявку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- === КНОПКА "СВЯЗАТЬСЯ С НАМИ" ПЕРЕД ПОДВАЛОМ === -->
+<div class="text-center my-5">
+    <button class="btn btn-gradient btn-lg rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+        Остались вопросы? Напишите нам!
+    </button>
+</div>
+<div class="section-divider-glow"></div>
+
+
+<!-- === ФУТЕР === -->
+<footer class="footer-section mt-5 pt-5 pb-3"
+        style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand mb-3">
+                    <img src="img/logo.png" alt="Логотип" class="footer-logo mb-2">
+                    <p class="footer-description">Услуги аренды экскаватора в Лиде и Лидском районе. Круглосуточно, без
+                        выходных и праздников.</p>
+                    <div class="footer-social d-flex gap-2">
+                        <a href="viber://chat?number=+375297849544" target="_blank"
+                           class="social-link viber d-flex align-items-center justify-content-center rounded-circle"
+                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-viber"></i></a>
+                        <a href="https://t.me/sashaamkador" target="_blank"
+                           class="social-link telegram d-flex align-items-center justify-content-center rounded-circle"
+                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank"
+                           class="social-link instagram d-flex align-items-center justify-content-center rounded-circle"
+                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-contacts">
+                    <h5 class="footer-title mb-3">Контакты</h5>
+                    <div class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+375297849544"
+                                                                                               class="contact-link">+375
+                        29 784-95-44</a></div>
+                    <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a
+                            href="excavatorlida@gmail.com" class="contact-link">excavatorlida@gmail.com</a></div>
+                    <div class="contact-item"><i class="bi bi-geo-alt-fill me-2"></i><span class="contact-text">г. Лида, Лидский район</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-services">
+                    <h5 class="footer-title mb-3">Наши услуги</h5>
+                    <ul class="footer-menu list-unstyled">
+                        <li><a href="#services" class="footer-link">Уборка снега</a></li>
+                        <li><a href="#services" class="footer-link">Планировка участка</a></li>
+                        <li><a href="#services" class="footer-link">Погрузка/выгрузка</a></li>
+                        <li><a href="#services" class="footer-link">Земельные работы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom border-top mt-4 pt-3 text-center text-secondary small">
+            © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span><br>
+            <span>УНП 591388079</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Кнопка "Вверх" -->
+<button id="scrollTopBtn" class="btn btn-orange shadow rounded-circle"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 9999;">
+    <i class="bi bi-arrow-up-short fs-4"></i>
+</button>
+
+<!-- АНИМАЦИИ и ДОП. СТИЛИ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
     :root {
       --main-yellow: #FFE082;
       --main-orange: #FFB74D;
@@ -45,531 +1312,125 @@
       --main-yellow-light: #FFF8E1;
       --main-brown-light: #c9a47a;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--main-yellow-light);
-      color: var(--main-brown-dark);
-    }
-    .header-divider {
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, var(--main-brown) 0%, var(--main-yellow) 100%);
-      border-radius: 2px;
-      margin: 1.5rem 0 2rem 0;
-      box-shadow: 0 2px 8px #ffd60033;
-    }
-    .header-container {
-      background: linear-gradient(90deg, var(--main-yellow) 60%, var(--main-brown-light) 100%);
-      border-bottom: 4px solid var(--main-brown);
-      box-shadow: 0 8px 32px 0 rgba(124,71,0,0.12);
-      border-radius: 0 0 2rem 2rem;
-      padding-top: 1.5rem;
-      padding-bottom: 0.5rem;
+    /* === HERO С НОВЫМ ГРАДИЕНТОМ === */
+    .hero-section {
+      background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/amkodor.jpg') center/cover no-repeat;
+      min-height: 75vh;
       position: relative;
-      z-index: 10;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .header-container .btn-orange {
-      font-size: 1.15rem;
-      padding: 0.7rem 2.2rem;
-      border-radius: 2rem;
-      font-weight: 700;
-      box-shadow: 0 2px 8px #ffd60033;
-    }
-    .header-container .btn-orange:hover {
-      background: var(--main-brown);
+    .hero-title {
       color: #fff;
+      text-shadow: 0 4px 32px #1a237e99, 0 1px 0 #fff8;
+      letter-spacing: 1.5px;
+      font-weight: 900;
+      filter: drop-shadow(0 2px 16px #1a237e88);
     }
-    .header-container .social-item {
-      transition: background 0.2s, color 0.2s;
+    .hero-section .btn-gradient {
+      background: linear-gradient(90deg, var(--main-blue) 60%, var(--main-yellow) 100%);
+      color: #fff;
+      box-shadow: 0 4px 32px #1a237e33, 0 2px 8px #ffd60033;
       border: none;
-      background: transparent !important;
-      box-shadow: none !important;
-    }
-    .header-container .social-item:hover {
-      background: var(--main-orange);
-      color: #fff;
-      box-shadow: none;
-    }
-    .header-container h1 {
-      color: var(--main-brown-dark);
       font-weight: 800;
       letter-spacing: 1px;
-      text-shadow: 0 2px 8px #fff3;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, filter 0.2s;
     }
-    .main-subtitle {
-      font-size: 1.25rem;
-      color: var(--main-brown);
-      margin-bottom: 1.5rem;
-      min-height: 2.5rem;
-      font-weight: 500;
+    .hero-section .btn-gradient:hover {
+      background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-blue) 90%);
+      color: #fff;
+      filter: brightness(1.1) drop-shadow(0 0 12px #ffd600cc);
+      box-shadow: 0 8px 32px #1a237e55, 0 2px 16px #ffd60055;
     }
-    .animated-text {
-      border-right: 2px solid var(--main-brown);
-      padding-right: 4px;
-      font-family: inherit;
+    /* === СЕКЦИИ С ГРАДИЕНТАМИ И СИНИМ АКЦЕНТОМ === */
+    .discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section {
+      background: linear-gradient(120deg, #fffbe6 60%, #f5e6d6 100%);
     }
-    .discount-banner {
-      background: linear-gradient(90deg, var(--main-orange) 60%, var(--main-yellow) 100%);
-      border-radius: 1.5rem;
-      box-shadow: 0 2px 12px 0 #ffb30033;
-      margin: 2rem 0 1.5rem 0;
-      padding: 1.2rem 2rem;
+    .section-title {
       color: var(--main-brown-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .discount-content {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .discount-icon {
-      font-size: 2.5rem;
-      color: var(--main-brown);
-      background: #fff8e1;
-      border-radius: 50%;
-      padding: 0.7rem 1rem;
-      box-shadow: 0 2px 8px #ffd60033;
-    }
-    .discount-text h3 {
-      margin: 0;
-      color: var(--main-brown-dark);
-      font-weight: 700;
-    }
-    .discount-text p {
-      margin: 0;
-      color: var(--main-brown);
-      font-size: 1rem;
-    }
-    .pricing-section {
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0 1.5rem 0;
-    }
-    .price-card {
-      background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);
-      border: 2px solid var(--main-brown);
-      border-radius: 1.5rem;
-      box-shadow: 0 2px 16px 0 #ffd60033;
-      padding: 2rem 2.5rem;
-      max-width: 340px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .price-header {
-      margin-bottom: 1rem;
-    }
-    .price-amount {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--main-brown);
-    }
-    .price-period {
-      color: var(--main-brown-dark);
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-    .price-minimum {
-      color: var(--main-brown);
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .price-features .feature-item {
-      color: var(--main-brown-dark);
-      font-size: 1rem;
-      margin-bottom: 0.2rem;
-    }
-    .price-btn {
+      text-shadow: 0 2px 12px #c9a47a22, 0 1px 0 #fff8;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      position: relative;
       display: inline-block;
-      margin-top: 1.2rem;
-      background: var(--main-brown);
-      color: #fff;
-      border-radius: 2rem;
-      padding: 0.7rem 2rem;
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-decoration: none;
-      transition: background 0.2s;
+      padding-bottom: 0.3em;
+      filter: drop-shadow(0 2px 8px #c9a47a33);
     }
-    .price-btn:hover {
-      background: var(--main-brown-dark);
-      color: #fff;
+    .section-title:after {
+      content: '';
+      display: block;
+      margin: 0.5em auto 0 auto;
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--main-brown) 0%, var(--main-yellow) 100%);
+      opacity: 0.8;
     }
-    .advantage-card {
-      background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);
-      border: 2px solid var(--main-brown);
-      border-radius: 1.2rem;
-      box-shadow: 0 2px 12px 0 #ffd60022;
-      padding: 1.2rem 1.2rem 1rem 1.2rem;
-      color: var(--main-brown-dark);
-      text-align: center;
-      min-height: 170px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .advantage-card .fw-bold {
+    .section-subtitle {
+      font-size: 1.15rem;
       color: var(--main-brown);
-      font-size: 1.1rem;
+      opacity: 0.85;
       margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    /* === КАРТОЧКИ С ГРАДИЕНТНОЙ РАМКОЙ И СВЕЧЕНИЕМ === */
+    .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
+      background: #fffbe6;
+      border: 2.5px solid transparent;
+      background-clip: padding-box;
+      position: relative;
+      transition: box-shadow 0.2s, transform 0.15s, border 0.3s;
+    }
+    .price-card:before, .advantage-card:before, .service-card:before, .step-card:before, .faq-section:before, .order-form:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      border-radius: 1.7rem;
+      background: linear-gradient(120deg, var(--main-brown) 0%, var(--main-yellow) 100%);
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .price-card:hover, .advantage-card:hover, .service-card:hover, .step-card:hover {
+      box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
+      border-color: var(--main-blue-light);
+      transform: translateY(-8px) scale(1.04);
+      filter: brightness(1.04) saturate(1.1);
+    }
+    /* === КНОПКИ С СИНИМ ГРАДИЕНТОМ === */
+    .btn-gradient, .btn.btn-gradient {
+      background: linear-gradient(90deg, var(--main-brown) 60%, var(--main-yellow) 100%);
+      color: #fff;
+      border: none;
+      font-weight: 800;
+      border-radius: 2rem;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s, filter 0.2s;
+      box-shadow: 0 2px 12px #c9a47a33;
       letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
-    .advantage-card .small {
-      color: var(--main-brown-dark);
-      font-size: 0.98rem;
-    }
-    .btn-orange, .btn.btn-orange {
-      background: var(--main-orange);
-      color: var(--main-brown-dark);
-      border: none;
-      font-weight: 700;
-      border-radius: 2rem;
-      transition: background 0.2s, color 0.2s;
-    }
-    .btn-orange:hover, .btn.btn-orange:hover {
-      background: var(--main-brown);
+    .btn-gradient:hover, .btn.btn-gradient:hover {
+      background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-brown) 90%);
       color: #fff;
+      filter: brightness(1.07) drop-shadow(0 0 8px #ffe082cc);
+      box-shadow: 0 4px 16px #ffe08255, 0 8px 32px #c9a47a55;
+      transform: translateY(-2px) scale(1.04);
     }
-    .how-to-order-section {
-      background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
-      border-top: 3px solid var(--main-brown);
-      border-bottom: 3px solid var(--main-brown);
+    .btn-gradient:active, .btn.btn-gradient:active {
+      transform: scale(0.96);
+      box-shadow: 0 1px 4px #ffe08255;
     }
-    .how-to-order-title {
-      color: var(--main-brown-dark);
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-    .how-to-order-subtitle {
-      color: var(--main-brown);
-      font-size: 1.1rem;
-    }
-    .step-card {
-      background: #fffde7;
-      border: 2px solid var(--main-brown);
-      border-radius: 1.2rem;
-      box-shadow: 0 2px 12px 0 #ffd60022;
-      padding: 1.5rem 1rem 1.2rem 1rem;
-      color: var(--main-brown-dark);
-      text-align: center;
-      min-height: 270px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    .step-number {
-      background: var(--main-brown);
-      color: #fff;
-      font-size: 1.3rem;
-      font-weight: 700;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.7rem;
-      box-shadow: 0 2px 8px #ffd60033;
-    }
-    .step-icon {
-      font-size: 2rem;
-      color: var(--main-orange);
-      margin-bottom: 0.5rem;
-    }
-    .step-card h4 {
-      color: var(--main-brown);
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    .step-card p, .delivery-info {
-      color: var(--main-brown-dark);
-      font-size: 1rem;
-    }
-    .delivery-info strong {
-      color: var(--main-brown);
-      font-size: 0.98rem;
-    }
-    .services-section {
-      background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
-      border-top: 3px solid var(--main-brown);
-      border-bottom: 3px solid var(--main-brown);
-    }
-    .services-title {
-      color: var(--main-brown-dark);
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-    .service-card {
-      background: #fffde7;
-      border: 2px solid var(--main-brown);
-      border-radius: 1.2rem;
-      box-shadow: 0 2px 12px 0 #ffd60022;
-      padding: 0;
-      color: var(--main-brown-dark);
-      text-align: center;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-    .service-image {
-      width: 100%;
-      height: 160px;
-      overflow: hidden;
-      background: var(--main-yellow);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .service-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-bottom: 2px solid var(--main-brown);
-    }
-    .service-content {
-      padding: 1.2rem 1rem 1.2rem 1rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .service-name {
-      color: var(--main-brown);
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-    .service-btn {
-      margin-top: auto;
-      background: var(--main-orange);
-      color: var(--main-brown-dark);
-      border-radius: 2rem;
-      font-weight: 700;
-      border: none;
-      transition: background 0.2s, color 0.2s;
-    }
-    .service-btn:hover {
-      background: var(--main-brown);
-      color: #fff;
-    }
-    .faq-section {
-      background: #fffde7;
-      border: 2px solid var(--main-brown);
-      border-radius: 1.5rem;
-      box-shadow: 0 2px 12px 0 #ffd60022;
-      color: var(--main-brown-dark);
-    }
-    .faq-section h4 {
-      color: var(--main-brown);
-      font-weight: 700;
-    }
-    .custom-faq .faq-item {
-      border-bottom: 1px solid #ffe082;
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-    .custom-faq .faq-question {
-      background: none;
-      border: none;
-      color: var(--main-brown-dark);
-      font-weight: 600;
-      font-size: 1.08rem;
-      width: 100%;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      padding: 0.5rem 0;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-    .custom-faq .faq-question:hover {
-      color: var(--main-brown);
-    }
-    .custom-faq .faq-icon svg {
-      vertical-align: middle;
-    }
-    .custom-faq .faq-answer {
-      display: none;
-      color: var(--main-brown-dark);
-      font-size: 1rem;
-      margin-top: 0.3rem;
-      padding-left: 2.2rem;
-    }
-    .custom-faq .faq-item.open .faq-answer {
-      display: block;
-      animation: fadeIn 0.3s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px);}
-      to { opacity: 1; transform: none;}
-    }
-    .order-form {
-      background: #fffde7;
-      border: 2px solid var(--main-brown);
-      border-radius: 1.5rem;
-      box-shadow: 0 2px 12px 0 #ffd60022;
-      color: var(--main-brown-dark);
-    }
-    .order-form h4 {
-      color: var(--main-brown);
-      font-weight: 700;
-    }
-    .form-control, .form-select {
-      border-radius: 2rem;
-      border: 2px solid var(--main-brown);
-      background: #fffbe6;
-      color: var(--main-brown-dark);
-      font-weight: 500;
-    }
-    .form-control:focus, .form-select:focus {
-      border-color: var(--main-orange);
-      box-shadow: 0 0 0 0.2rem #ffd60044;
-    }
-    .footer-section {
-      background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
-      color: var(--main-brown-dark);
-      border-top: 4px solid var(--main-yellow);
-      margin-top: 3rem;
-      padding-top: 2.5rem;
-      padding-bottom: 1.5rem;
-      box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
-    }
-    .footer-logo {
-      height: 100px;
-      max-width: 180px;
-      margin-bottom: 1rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .footer-description {
-      color: var(--main-brown-dark);
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-    .footer-social .social-link {
-      font-size: 1.5rem;
-      margin-right: 0.7rem;
-      color: var(--main-brown);
-      background: #fffbe6;
-      border-radius: 50%;
-      padding: 0.4rem 0.6rem;
-      transition: background 0.2s, color 0.2s;
-      border: 1.5px solid var(--main-brown);
-    }
-    .footer-social .social-link:hover {
-      background: var(--main-orange);
-      color: #fff;
-    }
-    .footer-title {
-      color: var(--main-brown-dark);
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .footer-contacts .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      margin-bottom: 0.7rem;
-      color: var(--main-brown-dark);
-    }
-    .footer-contacts .contact-link {
-      color: var(--main-brown-dark);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .footer-contacts .contact-link:hover {
-      color: var(--main-brown);
-    }
-    .footer-services .footer-menu {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .footer-services .footer-link {
-      color: var(--main-brown-dark);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .footer-services .footer-link:hover {
-      color: var(--main-brown);
-      text-decoration: underline;
-    }
-    .footer-bottom {
-      border-top: 2px solid var(--main-brown);
-      margin-top: 2rem;
-      padding-top: 1rem;
-      color: var(--main-brown-dark);
-      font-size: 0.98rem;
-    }
-    .copyright {
-      margin: 0;
-    }
-    .work-time {
-      margin: 0;
-      color: var(--main-brown);
-      font-weight: 600;
-    }
-    #scrollTopBtn {
-      background: var(--main-orange);
-      color: var(--main-brown-dark);
-      border: none;
-      box-shadow: 0 2px 8px #ffd60033;
-      transition: background 0.2s, color 0.2s;
-    }
-    #scrollTopBtn:hover {
-      background: var(--main-brown);
-      color: #fff;
-    }
-    /* Animations */
-    .fade-in-up {
-      animation: fadeInUp 0.8s;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px);}
-      to { opacity: 1; transform: none;}
-    }
-    /* Responsive tweaks */
-    @media (max-width: 767px) {
-      .header-container {
-        padding-top: 0.7rem;
-        padding-bottom: 0.2rem;
-        border-radius: 0 0 1.2rem 1.2rem;
-      }
-      .header-divider {
-        margin: 1rem 0 1.2rem 0;
-      }
-      .header-container .btn-orange {
-        font-size: 1rem;
-        padding: 0.5rem 1.2rem;
-      }
-      .discount-banner, .pricing-section {
-        flex-direction: column;
-        padding: 1rem;
-      }
-      .price-card {
-        padding: 1.2rem 1rem;
-      }
-    }
-    @media (max-width: 991px) {
-      .footer-logo { height: 60px !important; max-width: 110px !important; }
-    }
-  </style>
-  <!-- === КРУТЫЕ СТИЛИ ДЛЯ СОЦСЕТЕЙ И РАЗДЕЛИТЕЛЕЙ === -->
-  <style>
-    /* ... существующие стили ... */
     /* === СОЦСЕТИ: фирменные цвета и без подчеркивания === */
     .social-item, .footer-social .social-link {
       background: #fffbe6;
       border-radius: 50%;
       transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
-      box-shadow: 0 2px 8px #ffd60033;
+      box-shadow: 0 2px 8px #c9a47a22;
       font-size: 1.5rem;
       display: flex;
       align-items: center;
@@ -584,31 +1445,82 @@
       background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
     }
     .social-item:hover, .footer-social .social-link:hover {
-      background: var(--main-orange);
+      background: var(--main-blue-light);
       color: #fff;
-      box-shadow: 0 4px 16px #ffd60055;
+      box-shadow: 0 4px 16px #ffe08255;
       transform: scale(1.08);
       text-decoration: none !important;
     }
-    /* === КРАСИВЫЙ РАЗДЕЛИТЕЛЬ-БЛОКОВ (волна) === */
-    .section-divider {
-      width: 100%;
-      height: 60px;
+    /* === ФУТЕР: плавный градиент от синего к жёлтому === */
+    .footer-section {
+      background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
+      color: var(--main-brown-dark);
+      border-top: 4px solid var(--main-yellow);
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      padding-bottom: 1.5rem;
+      box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
+    }
+    .footer-title, .footer-link, .footer-description, .footer-contacts, .footer-bottom {
+      color: var(--main-brown-dark) !important;
+      text-shadow: 0 2px 8px #ffe08233, 0 1px 0 #fff8;
+    }
+    .footer-link:hover { color: var(--main-orange) !important; }
+    /* === Разделители-волны: синий-жёлтый градиент === */
+    .section-divider svg path {
+      fill: url(#footerWaveGrad);
+    }
+    .section-divider svg defs {
       display: block;
-      line-height: 0;
-      margin: -1px 0 0 0;
-      background: none;
+    }
+    /* === ФУТЕР: иконки соцсетей полностью в цвет соцсетей === */
+    .footer-social .social-link.viber {
+      color: #fff;
+      background: #7360f2;
+    }
+    .footer-social .social-link.telegram {
+      color: #fff;
+      background: #229ed9;
+    }
+    .footer-social .social-link.instagram {
+      color: #fff;
+      background: #e1306c;
+    }
+    .footer-social .social-link {
+      text-decoration: none !important;
       border: none;
-      padding: 0;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+      box-shadow: 0 2px 8px #c9a47a22;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .section-divider svg {
-      display: block;
-      width: 100%;
-      height: 60px;
+    .footer-social .social-link:hover {
+      filter: brightness(0.85);
+      box-shadow: 0 4px 16px #ffe08255;
+      transform: scale(1.08);
     }
-  </style>
-  <style>
-    /* ... остальные стили ... */
+    /* --- Мобильная адаптация --- */
+    @media (max-width: 991px) {
+      .section-title { font-size: 1.5rem; }
+      .section-divider, .section-divider svg { height: 40px !important; }
+      .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form { padding: 1.2rem 0.7rem !important; }
+      .service-image { height: 100px !important; }
+      .container { max-width: 98vw; }
+      .footer-section { padding-top: 2rem !important; }
+    }
+    @media (max-width: 767px) {
+      .section-title { font-size: 1.1rem; }
+      .btn-gradient, .btn.btn-gradient { font-size: 1rem; padding: 0.7rem 1.2rem; }
+      .footer-section { padding-top: 1.2rem !important; }
+      .footer-logo { height: 40px !important; }
+      .service-image { height: 60px !important; }
+      .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form { padding: 0.7rem 0.3rem !important; }
+      .footer-title { font-size: 1.1rem; }
+      .footer-description { font-size: 0.95rem; }
+      .footer-bottom { font-size: 0.85rem; }
+    }
     .section-divider-glow {
       width: 100%;
       height: 2px;
@@ -632,1028 +1544,211 @@
     @media (max-width: 767px) {
       .section-divider-glow { margin: 20px 0 20px 0; height: 1.5px; }
     }
-  </style>
-  <style>
-    /* ... остальные стили ... */
-    /* Удаляю коричневые линии между блоками и любые бордеры с коричневым */
-    .discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section, .footer-section {
-      border: none !important;
-      box-shadow: none !important;
-    }
-    .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
-      border: none !important;
-      box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
-    }
-    .section-divider-glow {
-      border: none !important;
-    }
-    /* Удаляю любые background или border с var(--main-brown), var(--main-brown-dark), var(--main-brown-light) */
-    [style*="var(--main-brown)"], [style*="var(--main-brown-dark)"], [style*="var(--main-brown-light)"] {
-      border: none !important;
-      background: none !important;
-      box-shadow: none !important;
-    }
-  </style>
-  <style>
-    .initials-avatar {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
-      color: #fff;
-      font-weight: 800;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1rem auto;
-      box-shadow: 0 2px 12px #ffd60055;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    .carousel-control-prev, .carousel-control-next {
-      width: 40px;
-      height: 40px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 214, 0, 0.15);
-      border-radius: 50%;
-      box-shadow: none;
-      opacity: 0.85;
-      z-index: 2;
-      transition: background 0.2s, opacity 0.2s;
-    }
-    .carousel-control-prev:hover, .carousel-control-next:hover {
-      background: rgba(255, 179, 0, 0.25);
-      opacity: 1;
-    }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-      background-size: 60% 60%;
-      width: 1.5rem;
-      height: 1.5rem;
-      filter: drop-shadow(0 2px 8px #ffd60055);
-    }
-    .carousel-inner .carousel-item {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-  </style>
-  <style>
-    .reviews-carousel-flex {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      max-width: 700px;
-      margin: 0 auto;
+    .stylish-header {
+      background: linear-gradient(90deg, rgba(255,255,255,0.97) 60%, rgba(205, 183, 151, 0.10) 100%);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 8px 32px 0 rgba(205,183,151,0.18), 0 2px 16px 0 #ffe08233, 0 1.5px 8px 0 #fffbe6;
+      border-bottom: 4px solid #c9a47a;
+      border-radius: 0;
+      padding: 1.2rem 2.2rem !important;
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: background 0.3s, box-shadow 0.3s;
       position: relative;
+      z-index: 100;
     }
-    .reviews-carousel-flex .carousel-inner {
-      min-height: 180px;
-      width: 100%;
-      overflow: visible;
-      /* убираю display: flex */
+    .stylish-header-inner {
+      min-height: 110px;
+      align-items: center;
     }
-    .reviews-carousel-flex .carousel-item {
-      margin: 0;
-      width: 100%;
-      overflow: visible;
-      /* убираю display: flex */
-      word-break: break-word;
-      white-space: normal;
+    .logo-img {
+      filter: drop-shadow(0 4px 24px #1a237e88);
+      transition: filter 0.2s, transform 0.2s;
+      border-radius: 1.2rem;
+      background: #fffbe6;
+      padding: 0.3rem 1.2rem;
+      box-shadow: 0 2px 16px #ffe08233, 0 0 0 6px #c9a47a22;
+      height: 100px !important;
+      max-width: 140px !important;
     }
-    .reviews-carousel-flex .carousel-item .blockquote {
-      word-break: break-word;
-      white-space: normal;
+    .logo-img:hover {
+      filter: drop-shadow(0 8px 32px #ffd600cc);
+      transform: scale(1.07) rotate(-2deg);
     }
-    .reviews-carousel-flex .carousel-control-prev,
-    .reviews-carousel-flex .carousel-control-next {
-      position: static;
-      margin: 0 0.5rem;
-      flex-shrink: 0;
-      z-index: 1;
+    .stylish-header .btn-outline-warning {
+      border-width: 2.5px;
+      font-size: 1.25rem;
+      background: rgba(255,255,255,0.8);
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
+      padding: 0.7rem 2.2rem;
     }
-    .reviews-carousel-flex .carousel-control-prev-icon,
-    .reviews-carousel-flex .carousel-control-next-icon {
-      margin: 0;
+    .stylish-header .btn-outline-warning:hover {
+      background: var(--main-yellow);
+      color: var(--main-blue);
+      box-shadow: 0 4px 16px #ffe08255, 0 0 0 6px #c9a47a33;
+    }
+    .stylish-header .social-item {
+      font-size: 2.2rem !important;
+      width: 54px !important;
+      height: 54px !important;
+      box-shadow: 0 2px 12px #c9a47a33, 0 0 0 4px #fffbe6;
+      border: 2.5px solid #c9a47a;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+      background: #fffbe6;
+      color: #c9a47a;
+      transition: box-shadow 0.2s, border 0.2s, color 0.2s, background 0.2s, transform 0.15s;
+    }
+    .stylish-header .social-item.viber { color: #7360f2; border-color: #7360f2; }
+    .stylish-header .social-item.telegram { color: #229ed9; border-color: #229ed9; }
+    .stylish-header .social-item.instagram { color: #e1306c; border-color: #e1306c; }
+    .stylish-header .social-item:hover {
+      background: var(--main-orange);
+      color: #fff;
+      border-color: var(--main-yellow);
+      box-shadow: 0 4px 24px #ffe08299, 0 0 0 8px #c9a47a33;
+      transform: scale(1.13);
+    }
+    .stylish-header .btn-orange {
+      font-size: 1.15rem;
+      padding: 0.7rem 2.2rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
+      margin-left: 0.5rem;
+    }
+    @media (max-width: 991px) {
+      .stylish-header { padding: 0.5rem 0.5rem !important; }
+      .logo-img { height: 60px !important; max-width: 80px !important; }
+      .stylish-header-inner { min-height: 60px; }
+      .stylish-header .social-item { font-size: 1.3rem !important; width: 36px !important; height: 36px !important; }
+      .stylish-header .btn-outline-warning, .stylish-header .btn-orange { font-size: 1rem; padding: 0.5rem 1.2rem; }
     }
     @media (max-width: 767px) {
-      .reviews-carousel-flex { max-width: 98vw; }
-      .reviews-carousel-flex .carousel-inner { min-height: 210px; }
+      .header-container .logo-img {
+        display: none !important;
+      }
+      .header-container .social-item {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 1.3rem !important;
+        padding: 0 !important;
+      }
+      .header-container .d-flex.align-items-center.gap-3 {
+        gap: 0.5rem !important;
+        justify-content: center !important;
+        width: 100%;
+      }
     }
-  </style>
-  <style>
-.review-card {
-  background: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
-  transition: box-shadow 0.2s, transform 0.15s;
-  position: relative;
-}
-.review-card:hover {
-  box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
-  transform: translateY(-6px) scale(1.03);
-}
-.initials-avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #FFD600 60%, #FFB300 100%);
-  color: #fff;
-  font-weight: 800;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1rem auto;
-  box-shadow: 0 2px 12px #ffd60055;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.review-text {
-  font-size: 1.08rem;
-  color: var(--main-brown-dark);
-  margin-top: 0.5rem;
-}
-  </style>
-</head>
-
-<body style="background: var(--main-yellow-light);">
-
-<!-- === HERO-СЕКЦИЯ С ПАРАЛЛАКСОМ === -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-center" style="min-height: 70vh;">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(44, 32, 7, 0.55); z-index: 1;"></div>
-  <div class="container position-relative z-2" style="z-index:2;">
-    <h1 class="display-2 fw-bold text-white mb-4 hero-title animate__animated animate__fadeInDown">Аренда экскаватора в Лиде и районе</h1>
-    <p class="lead text-white-50 mb-5 animate__animated animate__fadeInUp animate__delay-1s">Профессиональные услуги спецтехники для любых задач. Быстро, аккуратно, выгодно!</p>
-    <a href="#" class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s" data-bs-toggle="modal" data-bs-target="#orderModal">
-      <i class="bi bi-chat-dots-fill me-2"></i> Заказать услугу
-    </a>
-  </div>
-</section>
-<!-- Разделитель после hero -->
-<div class="section-divider-glow"></div>
-
-<!-- === ШАПКА (максимально крутая, без лишних разделителей и закруглений) === -->
-<header class="header-container stylish-header sticky-top" style="z-index: 100;">
-  <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2 stylish-header-inner animate__animated animate__fadeInDown">
-    <img src="img/logo.png" alt="Аренда экскаватора" class="logo-img" style="height: 80px; max-width: 110px;">
-    <div class="d-none d-md-block text-center">
-      <span class="fw-semibold text-dark">Работаем <span class="text-warning">24/7</span></span>
-      <span class="text-muted small ms-2">Без выходных и праздников</span>
-    </div>
-    <div class="d-flex align-items-center gap-3">
-      <a href="tel:+375297849544" class="btn btn-outline-warning rounded-pill fw-bold px-3"><i class="bi bi-phone-fill me-1"></i>+375 29 784-95-44</a>
-      <a href="viber://chat?number=+375297849544" target="_blank" class="social-item viber d-flex align-items-center justify-content-center rounded-circle" title="Viber" style="width: 38px; height: 38px;"><i class="fab fa-viber"></i></a>
-      <a href="https://t.me/sashaamkador" target="_blank" class="social-item telegram d-flex align-items-center justify-content-center rounded-circle" title="Telegram" style="width: 38px; height: 38px;"><i class="fab fa-telegram"></i></a>
-      <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank" class="social-item instagram d-flex align-items-center justify-content-center rounded-circle" title="Instagram" style="width: 38px; height: 38px;"><i class="fab fa-instagram"></i></a>
-    </div>
-    <a href="#" class="btn btn-orange d-md-none ms-2" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</a>
-  </div>
-</header>
-
-<!-- Удаляю разделитель сразу после шапки (section-divider-top) -->
-
-<!-- === КРАСИВЫЕ SVG-РАЗДЕЛИТЕЛИ (дуга) === -->
-<div class="section-divider-glow"></div>
-
-<!-- === СЕКЦИЯ СКИДКИ === -->
-<section class="discount-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
-  <div class="container">
-    <div class="discount-banner d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 p-4 rounded-4 shadow-lg animate__animated animate__fadeInUp">
-      <div class="discount-icon bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 2.2rem; color: var(--main-brown);">
-        <i class="bi bi-percent"></i>
-      </div>
-      <div class="discount-text text-center text-md-start">
-        <h2 class="fw-bold mb-1 section-title">Скидка до 20% постоянным клиентам</h2>
-        <p class="mb-0 text-secondary section-subtitle">Второй и последующие заказы — дешевле!</p>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === СЕКЦИЯ ЦЕН === -->
-<section class="price-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card shadow-lg p-4 rounded-4 animate__animated animate__fadeInUp d-flex flex-column flex-md-row align-items-stretch gap-4" style="background: #fffbe6; border: none;">
-          <!-- Левая часть: стоимость и условия -->
-          <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center border-end-md pe-md-4" style="min-width:220px;">
-            <div class="price-amount display-3 fw-bold mb-2">80 Br</div>
-            <div class="price-period text-secondary mb-2 fs-5">в час</div>
-            <div class="price-minimum text-warning mb-2">Минимум 4 часа</div>
-            <ul class="list-unstyled mb-3 fs-5">
-              <li class="mb-1"><i class="bi bi-clock-history text-warning me-2"></i>Выезд в течение 2 часов</li>
-              <li class="mb-1"><i class="bi bi-person-check text-warning me-2"></i>Опытный водитель</li>
-              <li class="mb-1"><i class="bi bi-cash-coin text-warning me-2"></i>Все расходы включены</li>
-              <li class="mb-1"><i class="bi bi-moon-stars text-warning me-2"></i>Работаем 24/7</li>
-            </ul>
-            <a href="#" class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-telephone-fill me-2"></i>Заказать сейчас</a>
-          </div>
-          <!-- Правая часть: калькулятор -->
-          <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center ps-md-4">
-            <h5 class="mb-3 fw-bold section-title">Калькулятор аренды</h5>
-            <form id="rentCalcForm" class="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center mb-3">
-              <label for="hoursInput" class="form-label mb-0 me-2">Часов аренды:</label>
-              <input type="number" min="4" max="100" step="1" value="4" id="hoursInput" class="form-control form-control-lg w-auto" style="max-width:120px;">
-              <span class="ms-2">× 80 Br/час</span>
-            </form>
-            <div class="mt-2 text-center">
-              <div id="calcResult" class="fs-4 fw-bold text-success">Итого: 320 Br</div>
-              <div id="calcDiscount" class="text-info mt-2" style="display:none;">Скидка 10% за 10+ часов!</div>
-              <div class="small text-secondary mt-2">Минимальный заказ — 4 часа. Скидка 10% при заказе от 10 часов.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<script>
-// Калькулятор аренды экскаватора
-function updateRentCalc() {
-  const hours = Math.max(4, parseInt(document.getElementById('hoursInput').value) || 4);
-  let total = hours * 80;
-  let discount = 0;
-  if (hours >= 10) {
-    discount = 0.1;
-    total = Math.round(total * 0.9);
-    document.getElementById('calcDiscount').style.display = '';
-  } else {
-    document.getElementById('calcDiscount').style.display = 'none';
-  }
-  document.getElementById('calcResult').textContent = `Итого: ${total} Br`;
-}
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('hoursInput').addEventListener('input', updateRentCalc);
-  updateRentCalc();
-});
-</script>
-<div class="section-divider-glow"></div>
-
-<!-- === ПРЕИМУЩЕСТВА === -->
-<section class="advantages-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
-  <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-6 col-lg-3">
-        <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
-          <div class="fw-bold fs-3 mb-2">🚚</div>
-          <div class="fw-bold fs-5 mb-2">Быстрая доставка</div>
-          <div class="text-secondary">Оперативно прибываем на место благодаря исправной технике.</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="fw-bold fs-3 mb-2">👷</div>
-          <div class="fw-bold fs-5 mb-2">Забота о вашем объекте</div>
-          <div class="text-secondary">Работаем аккуратно и профессионально — с заботой о вашем участке.</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="fw-bold fs-3 mb-2">🛠️</div>
-          <div class="fw-bold fs-5 mb-2">10-летний опыт</div>
-          <div class="text-secondary">С 2013 года выполнили более 2 000 работ разной сложности.</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="advantage-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="fw-bold fs-3 mb-2">💰</div>
-          <div class="fw-bold fs-5 mb-2">Гарантия низких цен</div>
-          <div class="text-secondary">Собственный парк техники — лучшие цены в регионе.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === КАК ЗАКАЗАТЬ === -->
-<section class="how-to-order-section py-5 bg-white bg-opacity-75">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <h2 class="how-to-order-title display-5 fw-bold mb-2 section-title">Как заказать технику</h2>
-        <p class="how-to-order-subtitle text-secondary section-subtitle">Простой процесс заказа в 4 шага</p>
-      </div>
-    </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-6 col-lg-3">
-        <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
-          <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">01</div>
-          <div class="step-icon mb-2 fs-2"><i class="bi bi-chat-dots-fill"></i></div>
-          <h4 class="fw-bold mb-2">Заявка</h4>
-          <p class="text-secondary mb-0">Оставьте заявку по телефону <br><strong>+375 29 784-95-44</strong><br> или на сайте.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">02</div>
-          <div class="step-icon mb-2 fs-2"><i class="bi bi-telephone-fill"></i></div>
-          <h4 class="fw-bold mb-2">Согласование</h4>
-          <p class="text-secondary mb-0">Согласуем технику, стоимость и место работ.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">03</div>
-          <div class="step-icon mb-2 fs-2"><i class="bi bi-truck"></i></div>
-          <h4 class="fw-bold mb-2">Доставка</h4>
-          <p class="text-secondary mb-1">Доставим экскаватор на объект в назначенное время.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="step-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">04</div>
-          <div class="step-icon mb-2 fs-2"><i class="bi bi-credit-card-fill"></i></div>
-          <h4 class="fw-bold mb-2">Оплата</h4>
-          <p class="text-secondary mb-0">Оплата наличными или по безналу — после выполнения работ.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === УСЛУГИ === -->
-<section class="services-section py-5" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <h2 class="services-title display-5 fw-bold mb-2 section-title">Наши услуги</h2>
-      </div>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp">
-          <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center" style="height: auto;">
-            <img src="img/snow.jpg" alt="Уборка снега" class="service-img w-100" style="height: 160px; object-fit: cover;">
-          </div>
-          <div class="service-content p-3">
-            <h3 class="service-name fw-bold mb-3">Уборка снега</h3>
-            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center" style="height: auto;">
-            <img src="img/planirovka.jpg" alt="Планировка участка" class="service-img w-100" style="height: 160px; object-fit: cover;">
-          </div>
-          <div class="service-content p-3">
-            <h3 class="service-name fw-bold mb-3">Планировка участка</h3>
-            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center" style="height: auto;">
-            <img src="img/pogruzka.jpg" alt="Погрузка/выгрузка песка и гравия" class="service-img w-100" style="height: 160px; object-fit: cover;">
-          </div>
-          <div class="service-content p-3">
-            <h3 class="service-name fw-bold mb-3">Погрузка/выгрузка песка и гравия</h3>
-            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center" style="height: auto;">
-            <img src="img/zeml.jpg" alt="Земельные работы" class="service-img w-100" style="height: 160px; object-fit: cover;">
-          </div>
-          <div class="service-content p-3">
-            <h3 class="service-name fw-bold mb-3">Земельные работы</h3>
-            <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === FAQ === -->
-<section class="faq-section container my-5 p-4 p-md-5 rounded-4 shadow-lg animate__animated animate__fadeInUp" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
-  <h4 class="mb-4 text-center fw-bold section-title">Нас часто спрашивают</h4>
-  <div class="custom-faq" id="customFaq">
-    <div class="faq-item mb-3">
-      <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
-        <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Сколько стоит аренда экскаватора?
-      </button>
-      <div class="faq-answer ps-4 text-secondary">Стоимость зависит от объёма и типа работ. Позвоните нам или оставьте заявку — мы быстро рассчитаем цену под вашу задачу!</div>
-    </div>
-    <div class="faq-item mb-3">
-      <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
-        <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Как быстро вы приезжаете на объект?
-      </button>
-      <div class="faq-answer ps-4 text-secondary">Обычно мы выезжаем в течение 1-2 часов после подтверждения заказа. Работаем 24/7, без выходных!</div>
-    </div>
-    <div class="faq-item mb-3">
-      <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
-        <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Какие документы нужны для заказа?
-      </button>
-      <div class="faq-answer ps-4 text-secondary">Для частных лиц — только телефон и адрес. Для организаций — реквизиты для договора. Всё просто!</div>
-    </div>
-    <div class="faq-item mb-3">
-      <button class="faq-question btn btn-link w-100 text-start fw-bold fs-5" type="button">
-        <span class="faq-icon me-2"><i class="bi bi-chevron-down"></i></span>Можно ли заказать экскаватор на выходные или ночью?
-      </button>
-      <div class="faq-answer ps-4 text-secondary">Да, мы работаем круглосуточно и без выходных. Просто позвоните или оставьте заявку на сайте!</div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === ОТЗЫВЫ КЛИЕНТОВ (НОВЫЙ ДИЗАЙН) === -->
-<section class="reviews-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #e3e7fd 100%);">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Отзывы клиентов</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp">
-          <div class="initials-avatar mb-3">ВЛ</div>
-          <div class="fw-bold mb-1">Вера, Лида</div>
-          <div class="text-secondary small mb-2">Уборка снега</div>
-          <div class="review-text">Очень понравилось, что приехали быстро и аккуратно убрали снег. Оператор вежливый, техника современная. Буду обращаться ещё!</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="initials-avatar mb-3">АБ</div>
-          <div class="fw-bold mb-1">Андрей, Берёзовка</div>
-          <div class="text-secondary small mb-2">Планировка участка</div>
-          <div class="review-text">Работа выполнена качественно и в срок. Всё объяснили, помогли с выбором услуги. Спасибо за профессионализм!</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="initials-avatar mb-3">ИС</div>
-          <div class="fw-bold mb-1">Ирина, Лида</div>
-          <div class="text-secondary small mb-2">Погрузка песка</div>
-          <div class="review-text">Очень удобно, что можно заказать технику даже вечером. Всё сделали быстро, цена приятная. Рекомендую друзьям!</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="initials-avatar mb-3">СЩ</div>
-          <div class="fw-bold mb-1">Сергей, Щучин</div>
-          <div class="text-secondary small mb-2">Земельные работы</div>
-          <div class="review-text">Экскаватор приехал вовремя, водитель опытный. Всё сделали за один день, участок остался чистым. Спасибо за работу!</div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="review-card p-4 rounded-4 shadow-lg h-100 text-center animate__animated animate__fadeInUp animate__delay-4s">
-          <div class="initials-avatar mb-3">ЕН</div>
-          <div class="fw-bold mb-1">Елена, Лида</div>
-          <div class="text-secondary small mb-2">Вывоз грунта</div>
-          <div class="review-text">Все вопросы решили по телефону, работа выполнена чётко и без задержек. Очень довольна сервисом!</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="section-divider-glow"></div>
-
-<!-- === ФОРМА ЗАКАЗА (МОДАЛЬНОЕ ОКНО) === -->
-<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content order-form p-3 p-md-4 rounded-4">
-      <form action="https://formsubmit.co/excavatorlida@gmail.com" method="POST" autocomplete="on">
-        <div class="modal-header border-0 pb-0">
-          <h4 class="modal-title w-100 text-center fw-bold section-title" id="orderModalLabel">Заказать услугу</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body pt-2">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" name="name" required>
-            </div>
-            <div class="col-md-6">
-              <input type="tel" class="form-control form-control-lg" placeholder="Телефон" name="phone" required>
-            </div>
-            <div class="col-12">
-              <select class="form-select form-select-lg" name="service" required>
-                <option value="" disabled selected>Выберите услугу</option>
-                <option>Уборка снега</option>
-                <option>Планировка участка</option>
-                <option>Погрузка/выгрузка песка и гравия</option>
-                <option>Земельные работы</option>
-                <option>Другие работы</option>
-              </select>
-            </div>
-            <input type="hidden" name="_next" value="https://excavator-lida.netlify.app/?success=1">
-            <input type="hidden" name="_subject" value="Новая заявка с сайта Excavator-Lida.by">
-            <input type="hidden" name="_captcha" value="false">
-          </div>
-        </div>
-        <div class="modal-footer border-0 pt-3 justify-content-center">
-          <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить заявку</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-<!-- === КНОПКА "СВЯЗАТЬСЯ С НАМИ" ПЕРЕД ПОДВАЛОМ === -->
-<div class="text-center my-5">
-  <button class="btn btn-gradient btn-lg rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
-    Остались вопросы? Напишите нам!
-  </button>
-</div>
-<div class="section-divider-glow"></div>
-
-
-<!-- === ФУТЕР === -->
-<footer class="footer-section mt-5 pt-5 pb-3" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4 col-md-6">
-        <div class="footer-brand mb-3">
-          <img src="img/logo.png" alt="Логотип" class="footer-logo mb-2">
-          <p class="footer-description">Услуги аренды экскаватора в Лиде и Лидском районе. Круглосуточно, без выходных и праздников.</p>
-          <div class="footer-social d-flex gap-2">
-            <a href="viber://chat?number=+375297849544" target="_blank" class="social-link viber d-flex align-items-center justify-content-center rounded-circle" style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-viber"></i></a>
-            <a href="https://t.me/sashaamkador" target="_blank" class="social-link telegram d-flex align-items-center justify-content-center rounded-circle" style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-telegram"></i></a>
-            <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank" class="social-link instagram d-flex align-items-center justify-content-center rounded-circle" style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="footer-contacts">
-          <h5 class="footer-title mb-3">Контакты</h5>
-          <div class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+375297849544" class="contact-link">+375 29 784-95-44</a></div>
-          <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a href="excavatorlida@gmail.com" class="contact-link">excavatorlida@gmail.com</a></div>
-          <div class="contact-item"><i class="bi bi-geo-alt-fill me-2"></i><span class="contact-text">г. Лида, Лидский район</span></div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="footer-services">
-          <h5 class="footer-title mb-3">Наши услуги</h5>
-          <ul class="footer-menu list-unstyled">
-            <li><a href="#services" class="footer-link">Уборка снега</a></li>
-            <li><a href="#services" class="footer-link">Планировка участка</a></li>
-            <li><a href="#services" class="footer-link">Погрузка/выгрузка</a></li>
-            <li><a href="#services" class="footer-link">Земельные работы</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom border-top mt-4 pt-3 text-center text-secondary small">
-      © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span><br>
-      <span>УНП 591388079</span>
-    </div>
-  </div>
-</footer>
-
-<!-- Кнопка "Вверх" -->
-<button id="scrollTopBtn" class="btn btn-orange shadow rounded-circle" style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 9999;">
-  <i class="bi bi-arrow-up-short fs-4"></i>
-</button>
-
-<!-- АНИМАЦИИ и ДОП. СТИЛИ -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<style>
-  :root {
-    --main-yellow: #FFE082;
-    --main-orange: #FFB74D;
-    --main-blue: #b3b9c9;
-    --main-blue-light: #dbe3ea;
-    --main-brown: #8D6748;
-    --main-brown-dark: #5a4636;
-    --main-yellow-light: #FFF8E1;
-    --main-brown-light: #c9a47a;
-  }
-  /* === HERO С НОВЫМ ГРАДИЕНТОМ === */
-  .hero-section {
-    background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/amkodor.jpg') center/cover no-repeat;
-    min-height: 75vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero-title {
-    color: #fff;
-    text-shadow: 0 4px 32px #1a237e99, 0 1px 0 #fff8;
-    letter-spacing: 1.5px;
-    font-weight: 900;
-    filter: drop-shadow(0 2px 16px #1a237e88);
-  }
-  .hero-section .btn-gradient {
-    background: linear-gradient(90deg, var(--main-blue) 60%, var(--main-yellow) 100%);
-    color: #fff;
-    box-shadow: 0 4px 32px #1a237e33, 0 2px 8px #ffd60033;
-    border: none;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, filter 0.2s;
-  }
-  .hero-section .btn-gradient:hover {
-    background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-blue) 90%);
-    color: #fff;
-    filter: brightness(1.1) drop-shadow(0 0 12px #ffd600cc);
-    box-shadow: 0 8px 32px #1a237e55, 0 2px 16px #ffd60055;
-  }
-  /* === СЕКЦИИ С ГРАДИЕНТАМИ И СИНИМ АКЦЕНТОМ === */
-  .discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section {
-    background: linear-gradient(120deg, #fffbe6 60%, #f5e6d6 100%);
-  }
-  .section-title {
-    color: var(--main-brown-dark);
-    text-shadow: 0 2px 12px #c9a47a22, 0 1px 0 #fff8;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 0.3em;
-    filter: drop-shadow(0 2px 8px #c9a47a33);
-  }
-  .section-title:after {
-    content: '';
-    display: block;
-    margin: 0.5em auto 0 auto;
-    width: 60px;
-    height: 4px;
-    border-radius: 2px;
-    background: linear-gradient(90deg, var(--main-brown) 0%, var(--main-yellow) 100%);
-    opacity: 0.8;
-  }
-  .section-subtitle {
-    font-size: 1.15rem;
-    color: var(--main-brown);
-    opacity: 0.85;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-  }
-  /* === КАРТОЧКИ С ГРАДИЕНТНОЙ РАМКОЙ И СВЕЧЕНИЕМ === */
-  .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
-    background: #fffbe6;
-    border: 2.5px solid transparent;
-    background-clip: padding-box;
-    position: relative;
-    transition: box-shadow 0.2s, transform 0.15s, border 0.3s;
-  }
-  .price-card:before, .advantage-card:before, .service-card:before, .step-card:before, .faq-section:before, .order-form:before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    top: -2px; left: -2px; right: -2px; bottom: -2px;
-    border-radius: 1.7rem;
-    background: linear-gradient(120deg, var(--main-brown) 0%, var(--main-yellow) 100%);
-    opacity: 0.10;
-    pointer-events: none;
-  }
-  .price-card:hover, .advantage-card:hover, .service-card:hover, .step-card:hover {
-    box-shadow: 0 12px 48px 0 #c9a47a44, 0 2px 16px #ffe08255;
-    border-color: var(--main-blue-light);
-    transform: translateY(-8px) scale(1.04);
-    filter: brightness(1.04) saturate(1.1);
-  }
-  /* === КНОПКИ С СИНИМ ГРАДИЕНТОМ === */
-  .btn-gradient, .btn.btn-gradient {
-    background: linear-gradient(90deg, var(--main-brown) 60%, var(--main-yellow) 100%);
-    color: #fff;
-    border: none;
-    font-weight: 800;
-    border-radius: 2rem;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s, filter 0.2s;
-    box-shadow: 0 2px 12px #c9a47a33;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-  }
-  .btn-gradient:hover, .btn.btn-gradient:hover {
-    background: linear-gradient(90deg, var(--main-yellow) 10%, var(--main-brown) 90%);
-    color: #fff;
-    filter: brightness(1.07) drop-shadow(0 0 8px #ffe082cc);
-    box-shadow: 0 4px 16px #ffe08255, 0 8px 32px #c9a47a55;
-    transform: translateY(-2px) scale(1.04);
-  }
-  .btn-gradient:active, .btn.btn-gradient:active {
-    transform: scale(0.96);
-    box-shadow: 0 1px 4px #ffe08255;
-  }
-  /* === СОЦСЕТИ: фирменные цвета и без подчеркивания === */
-  .social-item, .footer-social .social-link {
-    background: #fffbe6;
-    border-radius: 50%;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
-    box-shadow: 0 2px 8px #c9a47a22;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
-    border: none;
-  }
-  .social-item.viber, .footer-social .social-link.viber { color: #7360f2; }
-  .social-item.telegram, .footer-social .social-link.telegram { color: #229ed9; }
-  .social-item.instagram, .footer-social .social-link.instagram {
-    color: #e1306c;
-    background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
-  }
-  .social-item:hover, .footer-social .social-link:hover {
-    background: var(--main-blue-light);
-    color: #fff;
-    box-shadow: 0 4px 16px #ffe08255;
-    transform: scale(1.08);
-    text-decoration: none !important;
-  }
-  /* === ФУТЕР: плавный градиент от синего к жёлтому === */
-  .footer-section {
-    background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);
-    color: var(--main-brown-dark);
-    border-top: 4px solid var(--main-yellow);
-    margin-top: 3rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-    box-shadow: 0 0 32px #ffd60055, 0 2px 16px #fffbe6;
-  }
-  .footer-title, .footer-link, .footer-description, .footer-contacts, .footer-bottom {
-    color: var(--main-brown-dark) !important;
-    text-shadow: 0 2px 8px #ffe08233, 0 1px 0 #fff8;
-  }
-  .footer-link:hover { color: var(--main-orange) !important; }
-  /* === Разделители-волны: синий-жёлтый градиент === */
-  .section-divider svg path {
-    fill: url(#footerWaveGrad);
-  }
-  .section-divider svg defs {
-    display: block;
-  }
-  /* === ФУТЕР: иконки соцсетей полностью в цвет соцсетей === */
-  .footer-social .social-link.viber {
-    color: #fff;
-    background: #7360f2;
-  }
-  .footer-social .social-link.telegram {
-    color: #fff;
-    background: #229ed9;
-  }
-  .footer-social .social-link.instagram {
-    color: #fff;
-    background: #e1306c;
-  }
-  .footer-social .social-link {
-    text-decoration: none !important;
-    border: none;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
-    box-shadow: 0 2px 8px #c9a47a22;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-social .social-link:hover {
-    filter: brightness(0.85);
-    box-shadow: 0 4px 16px #ffe08255;
-    transform: scale(1.08);
-  }
-  /* --- Мобильная адаптация --- */
-  @media (max-width: 991px) {
-    .section-title { font-size: 1.5rem; }
-    .section-divider, .section-divider svg { height: 40px !important; }
-    .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form { padding: 1.2rem 0.7rem !important; }
-    .service-image { height: 100px !important; }
-    .container { max-width: 98vw; }
-    .footer-section { padding-top: 2rem !important; }
-  }
-  @media (max-width: 767px) {
-    .section-title { font-size: 1.1rem; }
-    .btn-gradient, .btn.btn-gradient { font-size: 1rem; padding: 0.7rem 1.2rem; }
-    .footer-section { padding-top: 1.2rem !important; }
-    .footer-logo { height: 40px !important; }
-    .service-image { height: 60px !important; }
-    .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form { padding: 0.7rem 0.3rem !important; }
-    .footer-title { font-size: 1.1rem; }
-    .footer-description { font-size: 0.95rem; }
-    .footer-bottom { font-size: 0.85rem; }
-  }
-  .section-divider-glow {
-    width: 100%;
-    height: 2px;
-    border: none;
-    background: linear-gradient(90deg, transparent 0%, #dbe3ea 30%, #b3b9c9 50%, #dbe3ea 70%, transparent 100%);
-    box-shadow: 0 0 8px 0 #b3b9c933;
-    border-radius: 1px;
-    margin: 40px 0 40px 0;
-    opacity: 0.7;
-    transition: box-shadow 0.3s, opacity 0.3s;
-  }
-  .section-divider-glow:hover {
-    opacity: 1;
-    box-shadow: 0 0 16px 2px #dbe3ea55;
-  }
-  /* Удаляю коричневые разделители и бордеры */
-  .price-card, .advantage-card, .service-card, .step-card, .faq-section, .order-form {
-    border: none !important;
-    box-shadow: 0 4px 32px 0 #c9a47a22, 0 2px 12px #ffe08222;
-  }
-  @media (max-width: 767px) {
-    .section-divider-glow { margin: 20px 0 20px 0; height: 1.5px; }
-  }
-  .stylish-header {
-    background: linear-gradient(90deg, rgba(255,255,255,0.97) 60%, rgba(205, 183, 151, 0.10) 100%);
-    backdrop-filter: blur(18px);
-    box-shadow: 0 8px 32px 0 rgba(205,183,151,0.18), 0 2px 16px 0 #ffe08233, 0 1.5px 8px 0 #fffbe6;
-    border-bottom: 4px solid #c9a47a;
-    border-radius: 0;
-    padding: 1.2rem 2.2rem !important;
-    margin-top: 0;
-    margin-bottom: 0;
-    transition: background 0.3s, box-shadow 0.3s;
-    position: relative;
-    z-index: 100;
-  }
-  .stylish-header-inner {
-    min-height: 110px;
-    align-items: center;
-  }
-  .logo-img {
-    filter: drop-shadow(0 4px 24px #1a237e88);
-    transition: filter 0.2s, transform 0.2s;
-    border-radius: 1.2rem;
-    background: #fffbe6;
-    padding: 0.3rem 1.2rem;
-    box-shadow: 0 2px 16px #ffe08233, 0 0 0 6px #c9a47a22;
-    height: 100px !important;
-    max-width: 140px !important;
-  }
-  .logo-img:hover {
-    filter: drop-shadow(0 8px 32px #ffd600cc);
-    transform: scale(1.07) rotate(-2deg);
-  }
-  .stylish-header .btn-outline-warning {
-    border-width: 2.5px;
-    font-size: 1.25rem;
-    background: rgba(255,255,255,0.8);
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
-    padding: 0.7rem 2.2rem;
-  }
-  .stylish-header .btn-outline-warning:hover {
-    background: var(--main-yellow);
-    color: var(--main-blue);
-    box-shadow: 0 4px 16px #ffe08255, 0 0 0 6px #c9a47a33;
-  }
-  .stylish-header .social-item {
-    font-size: 2.2rem !important;
-    width: 54px !important;
-    height: 54px !important;
-    box-shadow: 0 2px 12px #c9a47a33, 0 0 0 4px #fffbe6;
-    border: 2.5px solid #c9a47a;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-    background: #fffbe6;
-    color: #c9a47a;
-    transition: box-shadow 0.2s, border 0.2s, color 0.2s, background 0.2s, transform 0.15s;
-  }
-  .stylish-header .social-item.viber { color: #7360f2; border-color: #7360f2; }
-  .stylish-header .social-item.telegram { color: #229ed9; border-color: #229ed9; }
-  .stylish-header .social-item.instagram { color: #e1306c; border-color: #e1306c; }
-  .stylish-header .social-item:hover {
-    background: var(--main-orange);
-    color: #fff;
-    border-color: var(--main-yellow);
-    box-shadow: 0 4px 24px #ffe08299, 0 0 0 8px #c9a47a33;
-    transform: scale(1.13);
-  }
-  .stylish-header .btn-orange {
-    font-size: 1.15rem;
-    padding: 0.7rem 2.2rem;
-    border-radius: 2rem;
-    font-weight: 700;
-    box-shadow: 0 2px 8px #ffe08233, 0 0 0 3px #c9a47a22;
-    margin-left: 0.5rem;
-  }
-  @media (max-width: 991px) {
-    .stylish-header { padding: 0.5rem 0.5rem !important; }
-    .logo-img { height: 60px !important; max-width: 80px !important; }
-    .stylish-header-inner { min-height: 60px; }
-    .stylish-header .social-item { font-size: 1.3rem !important; width: 36px !important; height: 36px !important; }
-    .stylish-header .btn-outline-warning, .stylish-header .btn-orange { font-size: 1rem; padding: 0.5rem 1.2rem; }
-  }
-  @media (max-width: 767px) {
-    .header-container .logo-img {
-      display: none !important;
-    }
-    .header-container .social-item {
-      width: 36px !important;
-      height: 36px !important;
-      font-size: 1.3rem !important;
-      padding: 0 !important;
-    }
-    .header-container .d-flex.align-items-center.gap-3 {
-      gap: 0.5rem !important;
-      justify-content: center !important;
-      width: 100%;
-    }
-  }
 </style>
 <!-- SVG-градиент для разделителей -->
-<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="footerWaveGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a237e"/><stop offset="100%" stop-color="#FFD600"/></linearGradient></defs></svg>
+<svg width="0" height="0" style="position:absolute">
+    <defs>
+        <linearGradient id="footerWaveGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1a237e"/>
+            <stop offset="100%" stop-color="#FFD600"/>
+        </linearGradient>
+    </defs>
+</svg>
 <script>
-// Параллакс-эффект для hero (только на десктопах)
-if(window.innerWidth > 991) {
-  document.addEventListener('mousemove', function(e) {
-    const bg = document.querySelector('.hero-bg');
-    if(bg) {
-      const x = (e.clientX / window.innerWidth - 0.5) * 20;
-      const y = (e.clientY / window.innerHeight - 0.5) * 10;
-      bg.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
-    }
-  });
-}
-// FAQ-аккордеон
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const item = this.closest('.faq-item');
-      document.querySelectorAll('.faq-item').forEach(i => { if(i!==item) i.classList.remove('open'); });
-      item.classList.toggle('open');
-    });
-  });
-// Кнопка "Вверх"
-  const scrollTopBtn = document.getElementById("scrollTopBtn");
-  window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      scrollTopBtn.style.display = "block";
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
-  };
-  scrollTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-// --- Scroll reveal для секций и разделителей ---
-function revealOnScroll() {
-  document.querySelectorAll('.reveal, .section-divider').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 60) {
-      el.classList.add('visible');
-    }
-  });
-}
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('DOMContentLoaded', function() {
-  revealOnScroll();
-  // Добавить reveal класс к основным секциям
-  document.querySelectorAll('.discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section').forEach(sec => {
-    sec.classList.add('reveal');
-  });
-  // Изначально показать разделители
-  document.querySelectorAll('.section-divider').forEach(div => div.classList.add('reveal'));
-  revealOnScroll();
-});
-
-// === ОТПРАВКА ФОРМЫ В TELEGRAM ===
-// Замените значения ниже на свои:
-const telegramBotToken = 'ВАШ_ТОКЕН'; // <-- ВСТАВЬТЕ СЮДА ТОКЕН ВАШЕГО БОТА
-const telegramChatId = 'ВАШ_CHAT_ID'; // <-- ВСТАВЬТЕ СЮДА chat_id (группы, канала или пользователя)
-
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = form.querySelector('input[placeholder="Ваше имя"]').value.trim();
-      const phone = form.querySelector('input[placeholder="Телефон"]').value.trim();
-      const service = form.querySelector('select').value;
-      if (!name || !phone || !service) {
-        alert('Пожалуйста, заполните все поля!');
-        return;
-      }
-      const text = `📝 Новая заявка с сайта!%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AУслуга: ${encodeURIComponent(service)}`;
-      fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${text}`, {
-        method: 'GET'
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.ok) {
-          alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
-          form.reset();
-        } else {
-          alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
+    // Параллакс-эффект для hero (только на десктопах)
+    if(window.innerWidth > 991) {
+      document.addEventListener('mousemove', function(e) {
+        const bg = document.querySelector('.hero-bg');
+        if(bg) {
+          const x = (e.clientX / window.innerWidth - 0.5) * 20;
+          const y = (e.clientY / window.innerHeight - 0.5) * 10;
+          bg.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
         }
-      })
-      .catch(() => {
-        alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
       });
+    }
+    // FAQ-аккордеон
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const item = this.closest('.faq-item');
+          document.querySelectorAll('.faq-item').forEach(i => { if(i!==item) i.classList.remove('open'); });
+          item.classList.toggle('open');
+        });
+      });
+    // Кнопка "Вверх"
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      };
+      scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    // --- Scroll reveal для секций и разделителей ---
+    function revealOnScroll() {
+      document.querySelectorAll('.reveal, .section-divider').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', function() {
+      revealOnScroll();
+      // Добавить reveal класс к основным секциям
+      document.querySelectorAll('.discount-section, .price-section, .advantages-section, .how-to-order-section, .services-section, .faq-section, .order-section').forEach(sec => {
+        sec.classList.add('reveal');
+      });
+      // Изначально показать разделители
+      document.querySelectorAll('.section-divider').forEach(div => div.classList.add('reveal'));
+      revealOnScroll();
     });
-  }
-});
+
+    // === ОТПРАВКА ФОРМЫ В TELEGRAM ===
+    // Замените значения ниже на свои:
+    const telegramBotToken = 'ВАШ_ТОКЕН'; // <-- ВСТАВЬТЕ СЮДА ТОКЕН ВАШЕГО БОТА
+    const telegramChatId = 'ВАШ_CHAT_ID'; // <-- ВСТАВЬТЕ СЮДА chat_id (группы, канала или пользователя)
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = form.querySelector('input[placeholder="Ваше имя"]').value.trim();
+          const phone = form.querySelector('input[placeholder="Телефон"]').value.trim();
+          const service = form.querySelector('select').value;
+          if (!name || !phone || !service) {
+            alert('Пожалуйста, заполните все поля!');
+            return;
+          }
+          const text = `📝 Новая заявка с сайта!%0AИмя: ${encodeURIComponent(name)}%0AТелефон: ${encodeURIComponent(phone)}%0AУслуга: ${encodeURIComponent(service)}`;
+          fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${text}`, {
+            method: 'GET'
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.ok) {
+              alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+              form.reset();
+            } else {
+              alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
+            }
+          })
+          .catch(() => {
+            alert('Ошибка отправки. Попробуйте позже или свяжитесь по телефону.');
+          });
+        });
+      }
+    });
 </script>
 
 <!-- === SVG-РАЗДЕЛИТЕЛЬ (ВОЛНА) === -->
-<div class="section-divider" style="width:100vw;min-width:100vw;left:50%;transform:translateX(-50%);position:relative;margin:0;padding:0;">
-  <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"/></svg>
+<div class="section-divider"
+     style="width:100vw;min-width:100vw;left:50%;transform:translateX(-50%);position:relative;margin:0;padding:0;">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;height:auto;display:block;">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"/>
+    </svg>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
@@ -1661,45 +1756,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- === JS для показа алерта после возврата с формы === -->
 <script>
-  // Проверяем наличие ?success=1 или ?formsubmit в URL
-  if (window.location.search.includes('success=1') || window.location.search.includes('formsubmit')) {
-    const alert = document.createElement('div');
-    alert.className = 'alert alert-success text-center fw-bold position-fixed top-0 start-50 translate-middle-x mt-3 shadow-lg';
-    alert.style.zIndex = 2000;
-    alert.style.maxWidth = '420px';
-    alert.innerHTML = 'Спасибо! Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.';
-    document.body.appendChild(alert);
-    setTimeout(() => { alert.remove(); }, 7000);
-  }
+    // Проверяем наличие ?success=1 или ?formsubmit в URL
+    if (window.location.search.includes('success=1') || window.location.search.includes('formsubmit')) {
+      const alert = document.createElement('div');
+      alert.className = 'alert alert-success text-center fw-bold position-fixed top-0 start-50 translate-middle-x mt-3 shadow-lg';
+      alert.style.zIndex = 2000;
+      alert.style.maxWidth = '420px';
+      alert.innerHTML = 'Спасибо! Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.';
+      document.body.appendChild(alert);
+      setTimeout(() => { alert.remove(); }, 7000);
+    }
 </script>
-
 
 
 <!-- === МОДАЛЬНОЕ ОКНО "СВЯЗАТЬСЯ С НАМИ" === -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content order-form p-3 p-md-4 rounded-4">
-      <form id="contact-form-modal" autocomplete="on">
-        <div class="modal-header border-0 pb-0">
-          <h4 class="modal-title w-100 text-center fw-bold section-title" id="contactModalLabel">Связаться с нами</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content order-form p-3 p-md-4 rounded-4">
+            <form id="contact-form-modal" autocomplete="on">
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title w-100 text-center fw-bold section-title" id="contactModalLabel">Связаться с
+                        нами</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body pt-2">
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form-control-lg" rows="3" placeholder="Ваш вопрос или комментарий"
+                                  required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-3 justify-content-center">
+                    <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить</button>
+                </div>
+            </form>
         </div>
-        <div class="modal-body pt-2">
-          <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required>
-          </div>
-          <div class="mb-3">
-            <input type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control form-control-lg" rows="3" placeholder="Ваш вопрос или комментарий" required></textarea>
-          </div>
-        </div>
-        <div class="modal-footer border-0 pt-3 justify-content-center">
-          <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить</button>
-        </div>
-      </form>
     </div>
-  </div>
 </div>
+
+
+<!-- === СКРИПТ ДЛЯ ПРОДВИЖЕНИЯ САЙТА === -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Excavator-Lida.by",
+  "description": "Аренда экскаватора в Лиде и районе. Работаем 24/7.",
+  "url": "https://excavator-lida.netlify.app",
+  "telephone": "+375297849544",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Лида",
+    "addressCountry": "BY"
+  }
+}
+</script>
 </body>
