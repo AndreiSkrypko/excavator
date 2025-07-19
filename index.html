@@ -1,51 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          as="style"/>
+    <link rel="preload" href="img/logo.png" as="image" fetchpriority="high"/>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Аренда экскаватора в Лиде — Excavator-Lida.by</title>
-
     <!-- SEO -->
-    <meta name="description"
-          content="Аренда экскаватора в Лиде и районе. Быстрый выезд, опытные операторы, скидки до 20%. Работаем 24/7. Звоните: +375 44 111-22-33">
-    <meta name="keywords"
-          content="экскаватор Лида, аренда экскаватора, спецтехника Лида, земляные работы Лида, копка траншей Лида">
-    <meta name="author" content="excavator-lida.by">
-    <meta name="robots" content="index, follow">
-
+    <meta content="Аренда экскаватора в Лиде и районе. Быстрый выезд, опытные операторы, скидки до 20%. Работаем 24/7. Звоните: +375 29 784-95-44"
+          name="description"/>
+    <meta content="экскаватор Лида, аренда экскаватора, спецтехника Лида, земляные работы Лида, копка траншей Лида"
+          name="keywords"/>
+    <meta content="excavator-lida.by" name="author"/>
+    <meta content="index, follow" name="robots"/>
     <!-- Open Graph для соцсетей -->
-    <meta property="og:title" content="Аренда экскаватора в Лиде — Excavator-Lida.by">
-    <meta property="og:description"
-          content="Быстрый выезд, опытный оператор, скидки до 20%. Закажите услуги экскаватора 24/7 по телефону +375 44 111-22-33">
-    <meta property="og:url" content="https://excavator-lida.by/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://excavator-lida.by/img/logo.png">
-
-    <link rel="canonical" href="https://excavator-lida.netlify.app/">
-
+    <meta content="Аренда экскаватора в Лиде — excavator-lida.by" property="og:title"/>
+    <meta content="Быстрый выезд, опытный оператор, скидки до 20%. Закажите услуги экскаватора 24/7 по телефону +375 29 784-95-44"
+          property="og:description"/>
+    <meta content="https://excavator-lida.by/" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://excavator-lida.by/img/logo.png" property="og:image"/>
+    <link href="https://excavator-lida.by/" rel="canonical"/>
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+          rel="stylesheet"/>
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet"/>
     <!-- Custom CSS -->
     <style>
         :root {
@@ -789,13 +781,17 @@
           margin-top: 0.5rem;
         }
     </style>
+
+    <style>
+        section:not(:first-of-type) {
+          content-visibility: auto;
+        }
+    </style>
+
 </head>
-
 <body style="background: var(--main-yellow-light);">
-
 <!-- === HERO-СЕКЦИЯ С ПАРАЛЛАКСОМ === -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-center"
-         style="min-height: 70vh;">
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-center">
     <div class="hero-bg"></div>
     <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
          style="background: rgba(44, 32, 7, 0.55); z-index: 1;"></div>
@@ -804,47 +800,43 @@
             экскаватора в Лиде и районе</h1>
         <p class="lead text-white-50 mb-5 animate__animated animate__fadeInUp animate__delay-1s">Профессиональные услуги
             спецтехники для любых задач. Быстро, аккуратно, выгодно!</p>
-        <a href="#"
-           class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s"
-           data-bs-toggle="modal" data-bs-target="#orderModal">
+        <a class="btn btn-lg btn-gradient shadow-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__fadeInUp animate__delay-2s"
+           data-bs-target="#orderModal" data-bs-toggle="modal" href="#">
             <i class="bi bi-chat-dots-fill me-2"></i> Заказать услугу
         </a>
     </div>
 </section>
 <!-- Разделитель после hero -->
 <div class="section-divider-glow"></div>
-
 <!-- === ШАПКА (максимально крутая, без лишних разделителей и закруглений) === -->
 <header class="header-container stylish-header sticky-top" style="z-index: 100;">
     <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2 stylish-header-inner animate__animated animate__fadeInDown">
-        <img src="img/logo.png" alt="Аренда экскаватора" class="logo-img" style="height: 80px; max-width: 110px;">
+        <img alt="Аренда экскаватора" class="logo-img" loading="lazy" src="img/logo.png"
+             style="height: 80px; max-width: 110px;"/ loading="eager" fetchpriority="high" width="110" height="80">
         <div class="d-none d-md-block text-center">
             <span class="fw-semibold text-dark">Работаем <span class="text-warning">24/7</span></span>
             <span class="text-muted small ms-2">Без выходных и праздников</span>
         </div>
         <div class="d-flex align-items-center gap-3">
-            <a href="tel:+375297849544" class="btn btn-outline-warning rounded-pill fw-bold px-3"><i
+            <a class="btn btn-outline-warning rounded-pill fw-bold px-3" href="tel:+375297849544"><i
                     class="bi bi-phone-fill me-1"></i>+375 29 784-95-44</a>
-            <a href="viber://chat?number=+375297849544" target="_blank"
-               class="social-item viber d-flex align-items-center justify-content-center rounded-circle" title="Viber"
-               style="width: 38px; height: 38px;"><i class="fab fa-viber"></i></a>
-            <a href="https://t.me/sashaamkador" target="_blank"
-               class="social-item telegram d-flex align-items-center justify-content-center rounded-circle"
-               title="Telegram" style="width: 38px; height: 38px;"><i class="fab fa-telegram"></i></a>
-            <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank"
-               class="social-item instagram d-flex align-items-center justify-content-center rounded-circle"
-               title="Instagram" style="width: 38px; height: 38px;"><i class="fab fa-instagram"></i></a>
+            <a class="social-item viber d-flex align-items-center justify-content-center rounded-circle"
+               href="viber://chat?number=+375297849544" style="width: 38px; height: 38px;" target="_blank"
+               title="Viber"><i class="fab fa-viber"></i></a>
+            <a class="social-item telegram d-flex align-items-center justify-content-center rounded-circle"
+               href="https://t.me/sashaamkador" style="width: 38px; height: 38px;" target="_blank" title="Telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a class="social-item instagram d-flex align-items-center justify-content-center rounded-circle"
+               href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" style="width: 38px; height: 38px;"
+               target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <a href="#" class="btn btn-orange d-md-none ms-2" data-bs-toggle="modal"
-           data-bs-target="#orderModal">Заказать</a>
+        <a class="btn btn-orange d-md-none ms-2" data-bs-target="#orderModal" data-bs-toggle="modal"
+           href="#">Заказать</a>
     </div>
 </header>
-
 <!-- Удаляю разделитель сразу после шапки (section-divider-top) -->
-
 <!-- === КРАСИВЫЕ SVG-РАЗДЕЛИТЕЛИ (дуга) === -->
 <div class="section-divider-glow"></div>
-
 <!-- === СЕКЦИЯ СКИДКИ === -->
 <section class="discount-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
     <div class="container">
@@ -861,7 +853,6 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === СЕКЦИЯ ЦЕН === -->
 <section class="price-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
     <div class="container">
@@ -883,23 +874,23 @@
                             <li class="mb-1"><i class="bi bi-cash-coin text-warning me-2"></i>Все расходы включены</li>
                             <li class="mb-1"><i class="bi bi-moon-stars text-warning me-2"></i>Работаем 24/7</li>
                         </ul>
-                        <a href="#" class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2"
-                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-telephone-fill me-2"></i>Заказать
+                        <a class="btn btn-gradient btn-lg rounded-pill px-4 fw-bold mt-2" data-bs-target="#orderModal"
+                           data-bs-toggle="modal" href="#"><i class="bi bi-telephone-fill me-2"></i>Заказать
                             сейчас</a>
                     </div>
                     <!-- Правая часть: калькулятор -->
                     <div class="flex-fill d-flex flex-column justify-content-center align-items-center text-center ps-md-4">
                         <h5 class="mb-3 fw-bold section-title">Калькулятор аренды</h5>
-                        <form id="rentCalcForm"
-                              class="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center mb-3">
-                            <label for="hoursInput" class="form-label mb-0 me-2">Часов аренды:</label>
-                            <input type="number" min="4" max="100" step="1" value="4" id="hoursInput"
-                                   class="form-control form-control-lg w-auto" style="max-width:120px;">
+                        <form class="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center mb-3"
+                              id="rentCalcForm">
+                            <label class="form-label mb-0 me-2" for="hoursInput">Часов аренды:</label>
+                            <input class="form-control form-control-lg w-auto" id="hoursInput" max="100" min="4"
+                                   step="1" style="max-width:120px;" type="number" value="4"/>
                             <span class="ms-2">× 80 Br/час</span>
                         </form>
                         <div class="mt-2 text-center">
-                            <div id="calcResult" class="fs-4 fw-bold text-success">Итого: 320 Br</div>
-                            <div id="calcDiscount" class="text-info mt-2" style="display:none;">Скидка 10% за 10+
+                            <div class="fs-4 fw-bold text-success" id="calcResult">Итого: 320 Br</div>
+                            <div class="text-info mt-2" id="calcDiscount" style="display:none;">Скидка 10% за 10+
                                 часов!
                             </div>
                             <div class="small text-secondary mt-2">Минимальный заказ — 4 часа. Скидка 10% при заказе от
@@ -933,7 +924,6 @@
     });
 </script>
 <div class="section-divider-glow"></div>
-
 <!-- === ПРЕИМУЩЕСТВА === -->
 <section class="advantages-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
     <div class="container">
@@ -970,7 +960,6 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === КАК ЗАКАЗАТЬ === -->
 <section class="how-to-order-section py-5 bg-white bg-opacity-75">
     <div class="container">
@@ -986,8 +975,8 @@
                     <div class="step-number bg-warning text-white mb-3 mx-auto fs-4">01</div>
                     <div class="step-icon mb-2 fs-2"><i class="bi bi-chat-dots-fill"></i></div>
                     <h4 class="fw-bold mb-2">Заявка</h4>
-                    <p class="text-secondary mb-0">Оставьте заявку по телефону <br><strong>+375 29
-                        784-95-44</strong><br> или на сайте.</p>
+                    <p class="text-secondary mb-0">Оставьте заявку по телефону <br/><strong>+375 29
+                        784-95-44</strong><br/> или на сайте.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
@@ -1018,7 +1007,6 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === УСЛУГИ === -->
 <section class="services-section py-5" style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%);">
     <div class="container">
@@ -1032,13 +1020,13 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img src="img/snow.jpg" alt="Уборка снега" class="service-img w-100"
-                             style="height: 160px; object-fit: cover;">
+                        <img alt="Уборка снега" class="service-img w-100" loading="lazy" src="img/snow.jpg"
+                             style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
                         <h3 class="service-name fw-bold mb-3">Уборка снега</h3>
-                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
-                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                        <a class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-target="#orderModal"
+                           data-bs-toggle="modal" href="#"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
                     </div>
                 </div>
             </div>
@@ -1046,13 +1034,13 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-1s">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img src="img/planirovka.jpg" alt="Планировка участка" class="service-img w-100"
-                             style="height: 160px; object-fit: cover;">
+                        <img alt="Планировка участка" class="service-img w-100" loading="lazy" src="img/planirovka.jpg"
+                             style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
                         <h3 class="service-name fw-bold mb-3">Планировка участка</h3>
-                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
-                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                        <a class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-target="#orderModal"
+                           data-bs-toggle="modal" href="#"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
                     </div>
                 </div>
             </div>
@@ -1060,13 +1048,13 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-2s">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img src="img/pogruzka.jpg" alt="Погрузка/выгрузка песка и гравия" class="service-img w-100"
-                             style="height: 160px; object-fit: cover;">
+                        <img alt="Погрузка/выгрузка песка и гравия" class="service-img w-100" loading="lazy"
+                             src="img/pogruzka.jpg" style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
                         <h3 class="service-name fw-bold mb-3">Погрузка/выгрузка песка и гравия</h3>
-                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
-                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                        <a class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-target="#orderModal"
+                           data-bs-toggle="modal" href="#"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
                     </div>
                 </div>
             </div>
@@ -1074,13 +1062,13 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-3s">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img src="img/zeml.jpg" alt="Земельные работы" class="service-img w-100"
-                             style="height: 160px; object-fit: cover;">
+                        <img alt="Земельные работы" class="service-img w-100" loading="lazy" src="img/zeml.jpg"
+                             style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
                         <h3 class="service-name fw-bold mb-3">Земельные работы</h3>
-                        <a href="#" class="btn btn-gradient service-btn w-100 rounded-pill fw-bold"
-                           data-bs-toggle="modal" data-bs-target="#orderModal"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
+                        <a class="btn btn-gradient service-btn w-100 rounded-pill fw-bold" data-bs-target="#orderModal"
+                           data-bs-toggle="modal" href="#"><i class="bi bi-chat-dots-fill me-2"></i>Заказать</a>
                     </div>
                 </div>
             </div>
@@ -1088,7 +1076,6 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === FAQ === -->
 <section class="faq-section container my-5 p-4 p-md-5 rounded-4 shadow-lg animate__animated animate__fadeInUp"
          style="background: linear-gradient(120deg, #fffbe6 60%, #ffe082 100%);">
@@ -1130,7 +1117,6 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === ОТЗЫВЫ КЛИЕНТОВ (НОВЫЙ ДИЗАЙН) === -->
 <section class="reviews-section py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #e3e7fd 100%);">
     <div class="container">
@@ -1185,31 +1171,29 @@
     </div>
 </section>
 <div class="section-divider-glow"></div>
-
 <!-- === ФОРМА ЗАКАЗА (МОДАЛЬНОЕ ОКНО) === -->
-<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="orderModalLabel" class="modal fade" id="orderModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content order-form p-3 p-md-4 rounded-4">
             <form action="https://formsubmit.co/d0ddca2fe108af9f5cc7a39ad1ba62ba" method="POST">
-
                 <div class="modal-header border-0 pb-0">
                     <h4 class="modal-title w-100 text-center fw-bold section-title" id="orderModalLabel">Заказать
                         услугу</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    <button aria-label="Закрыть" class="btn-close" data-bs-dismiss="modal" type="button"></button>
                 </div>
                 <div class="modal-body pt-2">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" name="name"
-                                   required>
+                            <input class="form-control form-control-lg" name="name" placeholder="Ваше имя" required=""
+                                   type="text"/>
                         </div>
                         <div class="col-md-6">
-                            <input type="tel" class="form-control form-control-lg" placeholder="Телефон" name="phone"
-                                   required>
+                            <input class="form-control form-control-lg" name="phone" placeholder="Телефон" required=""
+                                   type="tel"/>
                         </div>
                         <div class="col-12">
-                            <select class="form-select form-select-lg" name="service" required>
-                                <option value="" disabled selected>Выберите услугу</option>
+                            <select class="form-select form-select-lg" name="service" required="">
+                                <option disabled="" selected="" value="">Выберите услугу</option>
                                 <option>Уборка снега</option>
                                 <option>Планировка участка</option>
                                 <option>Погрузка/выгрузка песка и гравия</option>
@@ -1217,30 +1201,26 @@
                                 <option>Другие работы</option>
                             </select>
                         </div>
-                        <input type="hidden" name="_next" value="https://excavator-lida.by/?success=1">
-                        <input type="hidden" name="_subject" value="Новая заявка с сайта Excavator-Lida.by">
-                        <input type="hidden" name="_captcha" value="false">
+                        <input name="_next" type="hidden" value="https://excavator-lida.by/?success=1"/>
+                        <input name="_subject" type="hidden" value="Новая заявка с сайта Excavator-Lida.by"/>
+                        <input name="_captcha" type="hidden" value="false"/>
                     </div>
                 </div>
                 <div class="modal-footer border-0 pt-3 justify-content-center">
-                    <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить заявку
+                    <button class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold" type="submit">Отправить заявку
                     </button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-
 <!-- === КНОПКА "СВЯЗАТЬСЯ С НАМИ" ПЕРЕД ПОДВАЛОМ === -->
 <div class="text-center my-5">
-    <button class="btn btn-gradient btn-lg rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+    <button class="btn btn-gradient btn-lg rounded-pill fw-bold" data-bs-target="#contactModal" data-bs-toggle="modal">
         Остались вопросы? Напишите нам!
     </button>
 </div>
 <div class="section-divider-glow"></div>
-
-
 <!-- === ФУТЕР === -->
 <footer class="footer-section mt-5 pt-5 pb-3"
         style="background: linear-gradient(90deg, #fffbe6 60%, #ffe082 100%); border-top: 4px solid var(--main-yellow);">
@@ -1248,30 +1228,33 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <div class="footer-brand mb-3">
-                    <img src="img/logo.png" alt="Логотип" class="footer-logo mb-2">
+                    <img alt="Логотип" class="footer-logo mb-2" loading="lazy" src="img/logo.png"/ loading="eager"
+                    fetchpriority="high" width="110" height="80">
                     <p class="footer-description">Услуги аренды экскаватора в Лиде и Лидском районе. Круглосуточно, без
                         выходных и праздников.</p>
                     <div class="footer-social d-flex gap-2">
-                        <a href="viber://chat?number=+375297849544" target="_blank"
-                           class="social-link viber d-flex align-items-center justify-content-center rounded-circle"
-                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-viber"></i></a>
-                        <a href="https://t.me/sashaamkador" target="_blank"
-                           class="social-link telegram d-flex align-items-center justify-content-center rounded-circle"
-                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-telegram"></i></a>
-                        <a href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw==" target="_blank"
-                           class="social-link instagram d-flex align-items-center justify-content-center rounded-circle"
-                           style="color: #7c4700; width: 36px; height: 36px;"><i class="fab fa-instagram"></i></a>
+                        <a class="social-link viber d-flex align-items-center justify-content-center rounded-circle"
+                           href="viber://chat?number=+375297849544" style="color: #7c4700; width: 36px; height: 36px;"
+                           target="_blank"><i class="fab fa-viber"></i></a>
+                        <a class="social-link telegram d-flex align-items-center justify-content-center rounded-circle"
+                           href="https://t.me/sashaamkador" style="color: #7c4700; width: 36px; height: 36px;"
+                           target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a class="social-link instagram d-flex align-items-center justify-content-center rounded-circle"
+                           href="https://instagram.com/strelkov9606?igsh=MTJtNHIyd2Nyajk3cw=="
+                           style="color: #7c4700; width: 36px; height: 36px;" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="footer-contacts">
                     <h5 class="footer-title mb-3">Контакты</h5>
-                    <div class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+375297849544"
-                                                                                               class="contact-link">+375
+                    <div class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i><a class="contact-link"
+                                                                                               href="tel:+375297849544">+375
                         29 784-95-44</a></div>
-                    <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a
-                            href="excavatorlida@gmail.com" class="contact-link">excavatorlida@gmail.com</a></div>
+                    <div class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i><a class="contact-link"
+                                                                                              href="excavatorlida@gmail.com">excavatorlida@gmail.com</a>
+                    </div>
                     <div class="contact-item"><i class="bi bi-geo-alt-fill me-2"></i><span class="contact-text">г. Лида, Лидский район</span>
                     </div>
                 </div>
@@ -1280,29 +1263,27 @@
                 <div class="footer-services">
                     <h5 class="footer-title mb-3">Наши услуги</h5>
                     <ul class="footer-menu list-unstyled">
-                        <li><a href="#services" class="footer-link">Уборка снега</a></li>
-                        <li><a href="#services" class="footer-link">Планировка участка</a></li>
-                        <li><a href="#services" class="footer-link">Погрузка/выгрузка</a></li>
-                        <li><a href="#services" class="footer-link">Земельные работы</a></li>
+                        <li><a class="footer-link" href="#services">Уборка снега</a></li>
+                        <li><a class="footer-link" href="#services">Планировка участка</a></li>
+                        <li><a class="footer-link" href="#services">Погрузка/выгрузка</a></li>
+                        <li><a class="footer-link" href="#services">Земельные работы</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom border-top mt-4 pt-3 text-center text-secondary small">
-            © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span><br>
+            © 2025 ExcavatorLida. Все права защищены. Работаем <span class="text-warning">24/7</span><br/>
             <span>УНП 591388079</span>
         </div>
     </div>
 </footer>
-
 <!-- Кнопка "Вверх" -->
-<button id="scrollTopBtn" class="btn btn-orange shadow rounded-circle"
+<button class="btn btn-orange shadow rounded-circle" id="scrollTopBtn"
         style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 9999;">
     <i class="bi bi-arrow-up-short fs-4"></i>
 </button>
-
 <!-- АНИМАЦИИ и ДОП. СТИЛИ -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 <style>
     :root {
       --main-yellow: #FFE082;
@@ -1645,12 +1626,12 @@
     }
 </style>
 <!-- SVG-градиент для разделителей -->
-<svg width="0" height="0" style="position:absolute">
+<svg height="0" style="position:absolute" width="0">
     <defs>
-        <linearGradient id="footerWaveGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#1a237e"/>
-            <stop offset="100%" stop-color="#FFD600"/>
-        </linearGradient>
+        <lineargradient id="footerWaveGrad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#1a237e"></stop>
+            <stop offset="100%" stop-color="#FFD600"></stop>
+        </lineargradient>
     </defs>
 </svg>
 <script>
@@ -1743,18 +1724,15 @@
       }
     });
 </script>
-
 <!-- === SVG-РАЗДЕЛИТЕЛЬ (ВОЛНА) === -->
 <div class="section-divider"
      style="width:100vw;min-width:100vw;left:50%;transform:translateX(-50%);position:relative;margin:0;padding:0;">
-    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-         style="width:100%;height:auto;display:block;">
-        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"/>
+    <svg fill="none" style="width:100%;height:auto;display:block;" viewbox="0 0 1440 60"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffd600" fill-opacity="0.18"></path>
     </svg>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- === JS для показа алерта после возврата с формы === -->
 <script>
@@ -1769,39 +1747,35 @@
       setTimeout(() => { alert.remove(); }, 7000);
     }
 </script>
-
-
 <!-- === МОДАЛЬНОЕ ОКНО "СВЯЗАТЬСЯ С НАМИ" === -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="contactModalLabel" class="modal fade" id="contactModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content order-form p-3 p-md-4 rounded-4">
-            <form id="contact-form-modal" autocomplete="on">
+            <form autocomplete="on" id="contact-form-modal">
                 <div class="modal-header border-0 pb-0">
                     <h4 class="modal-title w-100 text-center fw-bold section-title" id="contactModalLabel">Связаться с
                         нами</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    <button aria-label="Закрыть" class="btn-close" data-bs-dismiss="modal" type="button"></button>
                 </div>
                 <div class="modal-body pt-2">
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required>
+                        <input class="form-control form-control-lg" placeholder="Ваше имя" required="" type="text"/>
                     </div>
                     <div class="mb-3">
-                        <input type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
+                        <input class="form-control form-control-lg" placeholder="Телефон" required="" type="tel"/>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control form-control-lg" rows="3" placeholder="Ваш вопрос или комментарий"
-                                  required></textarea>
+                        <textarea class="form-control form-control-lg" placeholder="Ваш вопрос или комментарий"
+                                  required="" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer border-0 pt-3 justify-content-center">
-                    <button type="submit" class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold">Отправить</button>
+                    <button class="btn btn-gradient btn-lg px-5 rounded-pill fw-bold" type="submit">Отправить</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-
 <!-- === СКРИПТ ДЛЯ ПРОДВИЖЕНИЯ САЙТА === -->
 <script type="application/ld+json">
     {
@@ -1818,4 +1792,8 @@
         }
     }
 </script>
+</link>
+<script defer="True" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+<script defer="True" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
+</html>
