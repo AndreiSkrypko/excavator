@@ -1,4 +1,2 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://excavator-lida.by/sitemap.xml
+Disallow: /
