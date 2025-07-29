@@ -2,8 +2,8 @@
 
 <html lang="ru">
 <head>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          as="style"/>
+   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" as="style"/>
+
     <link rel="preload" href="img/logo.png" as="image" fetchpriority="high"/>
     <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -11,21 +11,48 @@
     <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Аренда экскаватора в Лиде — Excavator-Lida.by</title>
+
+    <!-- Schema.org JSON-LD (структурированные данные) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "excavator-Lida.by",
+    "description": "Аренда экскаватора в Лиде. Земляные работы, копка траншей, услуги спецтехники. Звоните 24/7.",
+    "image": "https://excavator-lida.by/img/logo.png",
+    "telephone": "+375297849544",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Лида",
+      "addressCountry": "BY"
+    },
+    "url": "https://excavator-lida.by"
+  }
+  </script>
+
+    <title>Экскаватор в Лиде — Аренда, Услуги, Земляные работы 24/7</title>
+
     <!-- SEO -->
-    <meta content="Аренда экскаватора в Лиде и районе. Быстрый выезд, опытные операторы, скидки до 20%. Работаем 24/7. Звоните: +375 29 784-95-44"
-          name="description"/>
-    <meta content="экскаватор Лида, аренда экскаватора, спецтехника Лида, земляные работы Лида, копка траншей Лида"
-          name="keywords"/>
-    <meta content="excavator-lida.by" name="author"/>
-    <meta content="index, follow" name="robots"/>
+    <meta name="description" content="Экскаватор в Лиде с оператором. Аренда экскаватора для копки, планировки, траншей. Надежно, быстро, круглосуточно. Звоните: +375 29 784-95-44"/>
+
+    <meta name="keywords" content="экскаватор Лида, аренда экскаватора Лида, услуги экскаватора Лида, экскаватор с оператором Лида, земляные работы Лида, спецтехника Лида, копка траншей Лида, мини экскаватор Лида, заказ экскаватора Лида, аренда спецтехники Лида"/>
+
+    <meta name="robots" content="index, follow"/>
+
     <!-- Open Graph для соцсетей -->
-    <meta content="Аренда экскаватора в Лиде — excavator-lida.by" property="og:title"/>
-    <meta content="Быстрый выезд, опытный оператор, скидки до 20%. Закажите услуги экскаватора 24/7 по телефону +375 29 784-95-44"
-          property="og:description"/>
-    <meta content="https://excavator-lida.by/" property="og:url"/>
-    <meta content="website" property="og:type"/>
-    <meta content="https://excavator-lida.by/img/logo.png" property="og:image"/>
+    <meta property="og:title" content="Экскаватор в Лиде — Аренда и услуги спецтехники 24/7"/>
+    <meta property="og:description" content="Быстрая и недорогая аренда экскаватора в Лиде. Операторы с опытом. Закажите прямо сейчас по номеру +375 29 784-95-44"/>
+    <meta property="og:url" content="https://excavator-lida.by/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://excavator-lida.by/img/logo.png"/>
+    <link rel="canonical" href="https://excavator-lida.by/" />
+
+
+
+
+
+
+
     <link rel="canonical" href="https://excavator-lida.by/" />
 
 
@@ -42,6 +69,14 @@
           rel="stylesheet"/>
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet"/>
+
+    <style>
+     body { margin: 0; font-family: sans-serif; }
+     header { text-align: center; padding: 1rem; }
+     h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+     .hero img { max-width: 100%; height: auto; display: block; }
+    </style>
+
     <!-- Custom CSS -->
     <style>
         :root {
@@ -832,8 +867,17 @@
 <!-- === ШАПКА (максимально крутая, без лишних разделителей и закруглений) === -->
 <header class="header-container stylish-header sticky-top" style="z-index: 100;">
     <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2 stylish-header-inner animate__animated animate__fadeInDown">
-        <img alt="Аренда экскаватора" class="logo-img" loading="lazy" src="img/logo.png"
-             style="height: 80px; max-width: 110px;"/ loading="eager" fetchpriority="high" width="110" height="80">
+        <img
+  src="img/logo.png"
+  alt="Аренда экскаватора"
+  class="logo-img"
+  loading="eager"
+  fetchpriority="high"
+  style="height: 80px; max-width: 110px;"
+  width="110"
+  height="80"
+/>
+
         <div class="d-none d-md-block text-center">
             <span class="fw-semibold text-dark">Работаем <span class="text-warning">24/7</span></span>
             <span class="text-muted small ms-2">Без выходных и праздников</span>
@@ -1041,7 +1085,7 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img alt="Уборка снега" class="service-img w-100" loading="lazy" src="img/snow.jpg"
+                        <img alt="Уборка снега" class="service-img w-100" loading="lazy" src="img/snow.webp"
                              style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
@@ -1055,7 +1099,7 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-1s">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img alt="Планировка участка" class="service-img w-100" loading="lazy" src="img/planirovka.jpg"
+                        <img alt="Планировка участка" class="service-img w-100" loading="lazy" src="img/planirovka.webp"
                              style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
@@ -1070,7 +1114,7 @@
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
                         <img alt="Погрузка/выгрузка песка и гравия" class="service-img w-100" loading="lazy"
-                             src="img/pogruzka.jpg" style="height: 160px; object-fit: cover;"/>
+                             src="img/pogruzka.webp" style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
                         <h3 class="service-name fw-bold mb-3">Погрузка/выгрузка песка и гравия</h3>
@@ -1083,7 +1127,7 @@
                 <div class="service-card rounded-4 shadow-lg h-100 animate__animated animate__fadeInUp animate__delay-3s">
                     <div class="service-image rounded-top-4 overflow-hidden d-flex flex-column align-items-center"
                          style="height: auto;">
-                        <img alt="Земельные работы" class="service-img w-100" loading="lazy" src="img/zeml.jpg"
+                        <img alt="Земельные работы" class="service-img w-100" loading="lazy" src="img/zeml.webp"
                              style="height: 160px; object-fit: cover;"/>
                     </div>
                     <div class="service-content p-3">
@@ -1318,7 +1362,7 @@
     }
     /* === HERO С НОВЫМ ГРАДИЕНТОМ === */
     .hero-section {
-      background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/amkodor.jpg') center/cover no-repeat;
+      background: linear-gradient(120deg, rgba(26,35,126,0.82) 0%, rgba(255,214,0,0.25) 100%), url('img/amkodor.webp') center/cover no-repeat;
       min-height: 75vh;
       position: relative;
       overflow: hidden;
@@ -1812,34 +1856,10 @@
         </div>
     </div>
 </div>
-<!-- === СКРИПТ ДЛЯ ПРОДВИЖЕНИЯ САЙТА === -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "excavator-lida.by",
-  "description": "Аренда экскаватора в Лиде и Лидском районе. Работаем круглосуточно, без выходных.",
-  "url": "https://excavator-lida.by",
-  "telephone": "+375297849544",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Лида",
-    "addressRegion": "Гродненская область",
-    "postalCode": "231300",
-    "addressCountry": "BY"
-  },
-  "openingHours": "Mo-Su 00:00-23:59",
-  "priceRange": "$$",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 53.8833,
-    "longitude": 25.2833
-  }
-}
-</script>
 
-</link>
-<script defer="True" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
-<script defer="True" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
 </body>
 </html>
