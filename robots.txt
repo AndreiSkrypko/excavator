@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://excavator-lida.by/sitemap.xml
-# Указание хоста (важно для Яндекса)
 Host: https://excavator-lida.by
