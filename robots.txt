@@ -1,5 +1,32 @@
 User-agent: *
 Allow: /
 
+# Разрешаем индексацию всех страниц
+Allow: /index.html
+Allow: /sitemap.xml
+
+# Запрещаем индексацию служебных файлов
+Disallow: /info
+Disallow: /google665d5f8b42bd6595.html
+Disallow: /yandex_cb91a85c12436113.html
+
+# Указываем расположение sitemap
 Sitemap: https://excavator-lida.by/sitemap.xml
-Host: https://excavator-lida.by
+
+# Дополнительные настройки для поисковых систем
+Crawl-delay: 1
+
+# Специальные настройки для Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Специальные настройки для Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Специальные настройки для Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
